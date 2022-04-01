@@ -1,0 +1,98 @@
+@import "vars";
+@import "mixins";
+.titleBox {
+  line-height: 1.5;
+  h2 {
+    margin-bottom: 50px;
+    font-size: $h2;
+    font-weight: 600;
+  }
+  p {
+    font-size: $medium-size;
+  }
+}
+
+.btns {
+  display: flex;
+  &.center {
+    justify-content: center;
+  }
+  &.right {
+    justify-content: flex-end;
+  }
+  .btn {
+    border: 1px solid $border-color;
+    border-radius: 100px;
+    transition: 0.25s ease;
+    @include flexCenter();
+  }
+  .transition:hover {
+    background-color: $text-color;
+    border-color: $text-color;
+    color: #fff;
+  }
+  .large {
+    height: 60px;
+    padding: 0 50px;
+  }
+}
+
+#main {
+  padding-top: 70px;
+  border: 1px red;
+  width: 100%;
+
+  #mainVisual {
+    width: 100%;
+    border: 1px red;
+    li {
+      .visual01 {
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+        height: 910px;
+        background-color: #eee;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-size: cover;
+        background-image: url("../images/main/banner/PC_main_1.png");
+        cursor: pointer;
+        position: relative;
+        .promiss {
+          margin: 0 auto;
+          border: 1px red;
+          text-align: center;
+          position: absolute;
+
+          top: 600px;
+          height: 310px;
+          left: 35%;
+          width: 500px;
+
+          h2 {
+            font-size: $h2;
+            font-weight: 900;
+            margin-top: 40px;
+          }
+          .sub {
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 40px;
+            p {
+              line-height: 30px;
+            }
+          }
+          button {
+            width: 150px;
+            height: 60px;
+            margin-top: 40px;
+            background-color: #ffcc00;
+            color: #fff;
+            font-size: 25px;
+          }
+        }
+      }
+    }
+  }
+  //   mainVisual end
+}
