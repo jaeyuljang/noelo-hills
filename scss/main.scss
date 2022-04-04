@@ -53,22 +53,22 @@
         height: 910px;
         background-color: #eee;
         background-repeat: no-repeat;
+        box-sizing: border-box;
         background-position: 50%;
         background-size: cover;
         background-image: url("../images/main/banner/PC_main_1.png");
         cursor: pointer;
         position: relative;
+        overflow: hidden;
         .promiss {
-          margin: 0 auto;
-          border: 1px red;
-          text-align: center;
           position: absolute;
+          left: 50%;
+          bottom: 0px;
+          transform: translateX(-50%);
 
-          top: 600px;
-          height: 310px;
-          left: 35%;
+          text-align: center;
           width: 500px;
-
+          height: 310px;
           h2 {
             font-size: $h2;
             font-weight: 900;
@@ -95,4 +95,89 @@
     }
   }
   //   mainVisual end
+  .main-info {
+    margin: 0 auto;
+    .container {
+      .sec01 {
+        border: 1px solid red;
+        display: flex;
+        justify-content: center;
+        width: 1320px;
+        margin: 0 auto;
+        .bg_img {
+          width: 660px;
+          height: 620px;
+          background-image: url("../images/main/main_img01.png");
+          background-repeat: no-repeat;
+          //background-position: 50%;
+          background-size: cover;
+        }
+        .txtBox {
+          width: 660px;
+          height: 620px;
+          position: relative;
+          .txtInner {
+            position: absolute;
+            padding-left: 80px;
+            top: 50%;
+            transform: translateY(-50%);
+            p {
+              font-size: 14px;
+              margin-bottom: 40px;
+              line-height: 20px;
+            }
+            a {
+              line-height: 50px;
+              height: 55px;
+              font-size: 30px;
+              padding: 0 30px;
+              font-weight: 600;
+              border: 2px solid #777777;
+              color: #777777;
+            }
+          }
+        }
+      }
+      .sec02 {
+        border: 1px solid red;
+        display: flex;
+        justify-content: center;
+        width: 1320px;
+        margin: 0 auto;
+        .txtBox {
+          width: 660px;
+          height: 620px;
+          position: relative;
+          .txtInner {
+            position: absolute;
+            padding-left: 80px;
+            top: 50%;
+            transform: translateY(-50%);
+            p {
+              font-size: 14px;
+              margin-bottom: 40px;
+              line-height: 20px;
+            }
+            a {
+              line-height: 50px;
+              height: 55px;
+              font-size: 30px;
+              padding: 0 30px;
+              font-weight: 600;
+              border: 2px solid #777777;
+              color: #777777;
+            }
+          }
+        }
+        .bg_img {
+          width: 660px;
+          height: 620px;
+          background-image: url("../images/main/main_img02.png");
+          background-repeat: no-repeat;
+          //background-position: 50%;
+          background-size: cover;
+        }
+      }
+    }
+  }
 }

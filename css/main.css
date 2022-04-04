@@ -20,9 +20,9 @@
 
 #main #mainVisual { width: 100%; border: 1px red; }
 
-#main #mainVisual li .visual01 { margin: 0 auto; text-align: center; width: 100%; height: 910px; background-color: #eee; background-repeat: no-repeat; background-position: 50%; background-size: cover; background-image: url("../images/main/banner/PC_main_1.png"); cursor: pointer; position: relative; }
+#main #mainVisual li .visual01 { margin: 0 auto; text-align: center; width: 100%; height: 910px; background-color: #eee; background-repeat: no-repeat; -webkit-box-sizing: border-box; box-sizing: border-box; background-position: 50%; background-size: cover; background-image: url("../images/main/banner/PC_main_1.png"); cursor: pointer; position: relative; overflow: hidden; }
 
-#main #mainVisual li .visual01 .promiss { margin: 0 auto; border: 1px red; text-align: center; position: absolute; top: 600px; height: 310px; left: 35%; width: 500px; }
+#main #mainVisual li .visual01 .promiss { position: absolute; left: 50%; bottom: 0px; -webkit-transform: translateX(-50%); transform: translateX(-50%); text-align: center; width: 500px; height: 310px; }
 
 #main #mainVisual li .visual01 .promiss h2 { font-size: 3.6rem; font-weight: 900; margin-top: 40px; }
 
@@ -31,3 +31,29 @@
 #main #mainVisual li .visual01 .promiss .sub p { line-height: 30px; }
 
 #main #mainVisual li .visual01 .promiss button { width: 150px; height: 60px; margin-top: 40px; background-color: #ffcc00; color: #fff; font-size: 25px; }
+
+#main .main-info { margin: 0 auto; }
+
+#main .main-info .container .sec01 { border: 1px solid red; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; width: 1320px; margin: 0 auto; }
+
+#main .main-info .container .sec01 .bg_img { width: 660px; height: 620px; background-image: url("../images/main/main_img01.png"); background-repeat: no-repeat; background-size: cover; }
+
+#main .main-info .container .sec01 .txtBox { width: 660px; height: 620px; position: relative; }
+
+#main .main-info .container .sec01 .txtBox .txtInner { position: absolute; padding-left: 80px; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+
+#main .main-info .container .sec01 .txtBox .txtInner p { font-size: 14px; margin-bottom: 40px; line-height: 20px; }
+
+#main .main-info .container .sec01 .txtBox .txtInner a { line-height: 50px; height: 55px; font-size: 30px; padding: 0 30px; font-weight: 600; border: 2px solid #777777; color: #777777; }
+
+#main .main-info .container .sec02 { border: 1px solid red; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; width: 1320px; margin: 0 auto; }
+
+#main .main-info .container .sec02 .txtBox { width: 660px; height: 620px; position: relative; }
+
+#main .main-info .container .sec02 .txtBox .txtInner { position: absolute; padding-left: 80px; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+
+#main .main-info .container .sec02 .txtBox .txtInner p { font-size: 14px; margin-bottom: 40px; line-height: 20px; }
+
+#main .main-info .container .sec02 .txtBox .txtInner a { line-height: 50px; height: 55px; font-size: 30px; padding: 0 30px; font-weight: 600; border: 2px solid #777777; color: #777777; }
+
+#main .main-info .container .sec02 .bg_img { width: 660px; height: 620px; background-image: url("../images/main/main_img02.png"); background-repeat: no-repeat; background-size: cover; }
