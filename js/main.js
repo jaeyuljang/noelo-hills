@@ -1,52 +1,86 @@
 Splitting();
-
 const mainVisualSlider = new Swiper("#mainVisual", {
   autoplay: true,
   speed: 1000,
   effect: "fade",
   loop: true,
-  navigation: {
-    prevEl: "#mainVisual .prev",
-    nextEl: "#mainVisual .next",
+  pagination: {
+    el: "#mainVisual .pagination",
+    type: "bullets",
+    clickable: true,
   },
 });
-//f(x,y) = x+y*3; f(3,5) = 18
 
-// const gnbItem = document.querySelectorAll("#gnb .list > li");
-// //document.querySelectorAll(찾는거) // 배열처럼 생긴 nodeList를 리턴한다.
-// const header = document.querySelector("#header");
-// console.log(gnbItem);
-// console.log(gnbItem.length);
-// for (let i = 0; i < gnbItem.length; i++) {
-//   gnbItem[i].addEventListener("mouseenter", function () {
-//     header.classList.add("open");
-//   });
-//   gnbItem[i].addEventListener("mouseleave", function () {
-//     header.classList.remove("open");
-//   });
-// }
+const productSlider = new Swiper("#product .list", {
+  speed: 600,
+  slidesPerView: 3, //화면에 보여지는 갯수
+  slidesPerGroup: 3, //묶음
+  navigation: {
+    prevEl: "#product .prev",
+    nextEl: "#product .next",
+  },
+});
 
-gsap.from("#mainVisual .slogan .main .char", { opacity: 0, x: 150, ease: "power4", duration: 1, stagger: 0.1 });
-gsap.from("#mainVisual .slogan .sub .char", { opacity: 0, x: 150, ease: "power4", duration: 1, delay: 2, stagger: 0.02 });
+gsap.from("#mainVisual .slogan .main .char", { opacity: 0, x: 150, skewX: -45, ease: "power4", duration: 1, stagger: 0.1 });
+gsap.from("#mainVisual .slogan .sub .char", { opacity: 0, x: 150, ease: "power4", duration: 1, stagger: 0.05, delay: 1 });
 
-/**
-const iq = 182;
-let height = 180;
-height = height + 5; // 대입연산자...
-let 나의키 = 180; //특수문자는 두개만 _ , $ 허용한다. 띄어쓰기 안된다. 숫자는 뒤에만 쓸 수 있다. 예약어는 안됨.
-console.log(나의키);
+const gnbList = $("#gnb .list > li");
+const faqList = $(".faqBox ul li");
+gnbList.on("mouseenter", function () {
+  $(this).find(".depth02").stop().slideDown(250);
+});
+gnbList.on("mouseleave", function () {
+  $(this).find(".depth02").stop().slideUp(100);
+});
 
-console.log(10 + 10);
-console.log(10 - 10);
-console.log(10 * 10);
-console.log(10 / 3); // 실수 나누기...(중학생 나누기)
-console.log(10 % 3); // 마너지 구하기...(토등학생 나누기)
+faqList.on("click", function () {
+  $(this).toggleClass("on");
+  $(this).siblings("li").removeClass("on");
+  $(this).find("dd").stop().slideToggle();
+  $(this).siblings("li").find("dd").stop().slideUp();
+});
 
-//Number, Stringm, Boolean
-let isOk = false;
+const header = $("#header");
+const btnTop = $(".btnTop");
+$(window).on("scroll", function () {
+  const st = $(window).scrollTop();
+  if (st > 0) {
+    if (!header.hasClass("scroll")) {
+      header.addClass("scroll");
+    }
+  } else {
+    if (header.hasClass("scroll")) {
+      header.removeClass("scroll");
+    }
+  }
 
-//문 statement(조건, 반복)   expression
-if (isOk) {
-  console.log("나는 참이어서 출력됩니다.");
+  //console.log(st);
+});
+
+const onedayCheck = $("#onedayCheck");
+const btnOneday = $(".popup .oneday");
+const popup = $(".popup");
+
+let isChecked = onedayCheck.is(":checked");
+console.log(isChecked);
+
+onedayCheck.on("change", function () {
+  //console.log($(this).is(":checked"));
+  isChecked = $(this).is(":checked");
+  console.log(isChecked);
+});
+btnOneday.on("click", function () {
+  gsap.to(popup, { top: -600, duration: 1, ease: "back.in" });
+  // in점점 빠르게,out 점점 느리게, inOut 좀좀 빠륵다가 점점 느리게
+  if (isChecked) {
+    Cookies.set("oneday", "one", { expires: 1 });
+  }
+});
+
+if (Cookies.get("oneday") === "one") {
+  popup.hide();
+} else {
+  popup.show();
 }
-*/
+
+//f(x,y) = x+y*3; f(3,5) = 18
