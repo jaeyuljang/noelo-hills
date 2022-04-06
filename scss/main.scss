@@ -39,12 +39,12 @@
 
 #main {
   padding-top: 70px;
-  border: 1px red;
+  // border: 1px red;
   width: 100%;
 
   #mainVisual {
     width: 100%;
-    border: 1px red;
+    // border: 1px red;
     li {
       .visual01 {
         margin: 0 auto;
@@ -330,7 +330,7 @@
                   width: 300px;
                   display: flex;
                   justify-content: space-around;
-                  li {
+                  div {
                     list-style: none;
                     position: relative;
                     input {
@@ -362,7 +362,7 @@
                   width: 800px;
                   text-align: left;
                   list-style: none;
-                  li {
+                  div {
                     strong {
                       a {
                         font-weight: 500;
@@ -439,7 +439,7 @@
                   flex-direction: column;
                   align-items: center;
                   justify-content: space-between;
-                  li {
+                  div {
                     list-style: none;
                     width: 120px;
                     height: 35px;
@@ -608,6 +608,207 @@
             line-height: 30px;
             font-size: 14px;
             color: #959ea6;
+          }
+        }
+      }
+    }
+  }
+  .myPage {
+    width: 1480px;
+    margin: 0 auto;
+    .titleArea {
+      padding: 40px 0;
+      margin: 0 auto;
+      text-align: center;
+      width: 500px;
+      height: 50px;
+      font-size: 36px;
+      font-weight: 500;
+      line-height: 50px;
+      color: #777777;
+    }
+    .myshopInfo {
+      width: 100%;
+      border: 1px solid #c3cfd9;
+      padding: 20px 0;
+      margin: 0 auto;
+      text-align: center;
+      box-sizing: border-box;
+      position: relative;
+      ul {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        text-align: left;
+        li {
+          width: 45%;
+          height: 30px;
+          line-height: 30px;
+          margin: 3px 0;
+          padding: 0 30px;
+          display: flex;
+          justify-content: space-between;
+          a {
+            border: 1px solid #c3cfd9;
+            padding: 0px 20px;
+            height: 30px;
+          }
+        }
+        &::before {
+          content: "";
+          display: block;
+          padding: 55px 0;
+          background-color: #c3cfd9;
+          width: 1px;
+          position: absolute;
+          left: 50%;
+        }
+      }
+    }
+    .orderstate {
+      margin-top: 40px;
+      border: 1px solid #c3cfd9;
+      .title {
+        background-color: #fcfcfc;
+        padding: 15px 20px;
+        font-size: 18px;
+        border-bottom: 1px solid #e9e9e9;
+        span {
+          font-size: 14px;
+        }
+      }
+      .state {
+        padding: 30px 0;
+        overflow: hidden;
+        .order {
+          display: flex;
+          justify-content: space-between;
+          li {
+            width: 25%;
+            font-size: 28px;
+            text-align: center;
+            border-left: 1px solid #e9e9e9;
+            color: #676e73;
+            font-weight: 500;
+            // display: flex;
+            // flex-wrap: wrap;
+            // justify-content: center;
+            strong {
+              height: 40px;
+              display: inline-block;
+              width: 100%;
+            }
+            a {
+              width: 100%;
+              margin-top: 10px;
+              span {
+                color: #676e73;
+                font-weight: 500;
+              }
+            }
+            &:nth-child(1) {
+              border-left: none;
+            }
+          }
+        }
+        .cs {
+          margin-top: 40px;
+          text-align: center;
+          li {
+            display: inline-block;
+            height: 40px;
+            border: 1px solid #c3c3c3;
+            margin: 0 5px;
+            padding: 0 20px;
+            line-height: 40px;
+            a {
+              color: #777777;
+              font-size: 16px;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+    //마이페이지 - 나의 주문현황 완료
+    .myShopLink {
+      margin-top: 40px;
+      ul {
+        display: flex;
+        justify-content: space-between;
+        li {
+          width: 32%;
+          text-align: center;
+          height: 225px;
+          background-color: #fffaeb;
+          a {
+            div {
+              width: 100%;
+              height: 100%;
+              background-repeat: no-repeat;
+              background-position: 50%;
+              background-position-y: 25%;
+              box-sizing: border-box;
+              padding-top: 150px;
+              h3 {
+                color: #f9ce42;
+                font-size: 18px;
+                font-weight: 600;
+                padding: 10px 0;
+              }
+              p {
+                color: #676e73;
+                font-size: 18px;
+                font-weight: 500;
+                padding: 10px 0;
+              }
+            }
+          }
+          &:nth-child(1) {
+            div {
+              background-image: url("../images/mypage/bg-mypage-linkbox01.png");
+            }
+          }
+          &:nth-child(2) {
+            div {
+              background-image: url("../images/mypage/bg-mypage-linkbox02.png");
+            }
+          }
+          &:nth-child(3) {
+            div {
+              background-image: url("../images/mypage/bg-mypage-linkbox03.png");
+            }
+          }
+        }
+      }
+    }
+    // 마이페이지 - 주문내역, 회원정보관리, 1:1 맞춤상담
+    .myshopMain {
+      margin: 80px 0;
+      width: 100%;
+      border-top: 1px solid #ccc;
+      ul {
+        li {
+          width: 100%;
+          border-bottom: 1px solid #ccc;
+          a {
+            display: block;
+
+            padding: 30px 20px;
+            height: inherit;
+
+            background-image: url("../images/mypage/myShopLink-arr.png");
+            background-repeat: no-repeat;
+            background-position: 98%;
+            strong {
+              font-size: 16px;
+              font-weight: 500;
+            }
+            span {
+              padding-left: 10px;
+              font-size: 14px;
+              color: #959ea6;
+            }
           }
         }
       }
