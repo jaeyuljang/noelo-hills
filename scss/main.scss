@@ -39,24 +39,29 @@
 
 #main {
   padding-top: 70px;
-  // border: 1px red;
   width: 100%;
-
+  // 메인페이지 슬라이드 이미지 부분
   #mainVisual {
-    width: 100%;
-    // border: 1px red;
-    li {
-      .visual01 {
+    position: relative;
+    ul {
+      li {
         margin: 0 auto;
         text-align: center;
-        width: 100%;
         height: 910px;
         background-color: #eee;
         background-repeat: no-repeat;
         box-sizing: border-box;
         background-position: 50%;
         background-size: cover;
-        background-image: url("../images/main/banner/PC_main_1.png");
+        &.visual01 {
+          background-image: url("../images/main/banner/PC_main_1.png");
+        }
+        &.visual02 {
+          background-image: url("../images/main/banner/PC2_essence.png");
+        }
+        &.visual03 {
+          background-image: url("../images/main/banner/PC3_brand.png");
+        }
         cursor: pointer;
         position: relative;
         overflow: hidden;
@@ -65,10 +70,10 @@
           left: 50%;
           bottom: 0px;
           transform: translateX(-50%);
-
           text-align: center;
           width: 500px;
           height: 310px;
+          color: #777777;
           h2 {
             font-size: $h2;
             font-weight: 900;
@@ -93,8 +98,31 @@
         }
       }
     }
+    .pagination {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%);
+      width: 250px;
+      height: 30px;
+      margin: 0 auto;
+      text-align: center;
+
+      z-index: 99;
+      .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        background: #fff;
+        opacity: 1;
+        border-radius: 100px;
+        &-active {
+          background: #ffcf42;
+        }
+      }
+    }
   }
   //   mainVisual end
+  // 메인페이지 baby, kid&family, bath goods, prsent 작업
   .main-info {
     margin: 0 auto;
     .container {
@@ -257,6 +285,7 @@
     }
   }
   //main-info end
+  //장바구니 시작
   .cart {
     width: 1480px;
     margin: 0 auto;
@@ -353,6 +382,11 @@
                       background-size: cover;
                       cursor: pointer;
                     }
+                    :checked + label {
+                      background-image: url(../images/cart/bg-checkbox-active.png);
+                    }
+                  }
+                  div {
                     img {
                       width: 130px;
                     }
@@ -573,7 +607,6 @@
           font-size: 16px;
           color: #fff;
           font-weight: 500;
-
           &:nth-child(1) {
             background-color: #ffcc00;
             margin-right: 5px;
@@ -613,6 +646,8 @@
       }
     }
   }
+  //cart end
+  // 마이페이지 시작
   .myPage {
     width: 1480px;
     margin: 0 auto;
@@ -690,9 +725,6 @@
             border-left: 1px solid #e9e9e9;
             color: #676e73;
             font-weight: 500;
-            // display: flex;
-            // flex-wrap: wrap;
-            // justify-content: center;
             strong {
               height: 40px;
               display: inline-block;
@@ -814,4 +846,5 @@
       }
     }
   }
+  //myPage 완료
 }

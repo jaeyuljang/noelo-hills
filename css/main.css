@@ -18,19 +18,31 @@
 
 #main { padding-top: 70px; width: 100%; }
 
-#main #mainVisual { width: 100%; }
+#main #mainVisual { position: relative; }
 
-#main #mainVisual li .visual01 { margin: 0 auto; text-align: center; width: 100%; height: 910px; background-color: #eee; background-repeat: no-repeat; -webkit-box-sizing: border-box; box-sizing: border-box; background-position: 50%; background-size: cover; background-image: url("../images/main/banner/PC_main_1.png"); cursor: pointer; position: relative; overflow: hidden; }
+#main #mainVisual ul li { margin: 0 auto; text-align: center; height: 910px; background-color: #eee; background-repeat: no-repeat; -webkit-box-sizing: border-box; box-sizing: border-box; background-position: 50%; background-size: cover; cursor: pointer; position: relative; overflow: hidden; }
 
-#main #mainVisual li .visual01 .promiss { position: absolute; left: 50%; bottom: 0px; -webkit-transform: translateX(-50%); transform: translateX(-50%); text-align: center; width: 500px; height: 310px; }
+#main #mainVisual ul li.visual01 { background-image: url("../images/main/banner/PC_main_1.png"); }
 
-#main #mainVisual li .visual01 .promiss h2 { font-size: 3.6rem; font-weight: 900; margin-top: 40px; }
+#main #mainVisual ul li.visual02 { background-image: url("../images/main/banner/PC2_essence.png"); }
 
-#main #mainVisual li .visual01 .promiss .sub { font-size: 20px; font-weight: 600; margin-top: 40px; }
+#main #mainVisual ul li.visual03 { background-image: url("../images/main/banner/PC3_brand.png"); }
 
-#main #mainVisual li .visual01 .promiss .sub p { line-height: 30px; }
+#main #mainVisual ul li .promiss { position: absolute; left: 50%; bottom: 0px; -webkit-transform: translateX(-50%); transform: translateX(-50%); text-align: center; width: 500px; height: 310px; color: #777777; }
 
-#main #mainVisual li .visual01 .promiss button { width: 150px; height: 60px; margin-top: 40px; background-color: #ffcc00; color: #fff; font-size: 25px; }
+#main #mainVisual ul li .promiss h2 { font-size: 3.6rem; font-weight: 900; margin-top: 40px; }
+
+#main #mainVisual ul li .promiss .sub { font-size: 20px; font-weight: 600; margin-top: 40px; }
+
+#main #mainVisual ul li .promiss .sub p { line-height: 30px; }
+
+#main #mainVisual ul li .promiss button { width: 150px; height: 60px; margin-top: 40px; background-color: #ffcc00; color: #fff; font-size: 25px; }
+
+#main #mainVisual .pagination { position: absolute; top: 60%; left: 50%; -webkit-transform: translate(-50%); transform: translate(-50%); width: 250px; height: 30px; margin: 0 auto; text-align: center; z-index: 99; }
+
+#main #mainVisual .pagination .swiper-pagination-bullet { width: 10px; height: 10px; background: #fff; opacity: 1; border-radius: 100px; }
+
+#main #mainVisual .pagination .swiper-pagination-bullet-active { background: #ffcf42; }
 
 #main .main-info { margin: 0 auto; }
 
@@ -115,6 +127,8 @@
 #main .cart .order-Check .orderList .cart-table table tbody tr .cart-td1 div input { font-size: 12px; width: 13px; height: 13px; border: 0; -webkit-box-sizing: border-box; box-sizing: border-box; display: none; }
 
 #main .cart .order-Check .orderList .cart-table table tbody tr .cart-td1 div label { position: absolute; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); display: inline-block; width: 24px; height: 24px; background-image: url(../images/cart/bg-checkbox.png); background-repeat: no-repeat; background-size: cover; cursor: pointer; }
+
+#main .cart .order-Check .orderList .cart-table table tbody tr .cart-td1 div :checked + label { background-image: url(../images/cart/bg-checkbox-active.png); }
 
 #main .cart .order-Check .orderList .cart-table table tbody tr .cart-td1 div img { width: 130px; }
 

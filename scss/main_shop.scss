@@ -14,12 +14,23 @@
     ul {
       margin: 0 auto;
       margin-top: 30px;
-      width: 900px;
+      width: 800px;
       display: flex;
       justify-content: space-around;
       padding: 0 30px;
-      a {
-        font-weight: 500;
+      li {
+        a {
+          font-size: 14px;
+          font-weight: 400;
+          color: #777777;
+        }
+        &.on {
+          a {
+            font-size: 14px;
+            font-weight: 400;
+            color: #ffcc00;
+          }
+        }
       }
     }
   }
@@ -29,120 +40,48 @@
     height: 350px;
     background-repeat: no-repeat;
     background-position: 50%;
-    background-image: url(../images/main/product/subimage_shopall.png);
     background-size: cover;
     box-sizing: border-box;
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-first;
     .txtBox {
       margin: 0 auto;
       color: #fff;
-      text-align: center;
-      padding-top: 225px;
+      display: block;
       line-height: 20px;
       font-size: 14px;
-
+      padding-bottom: 20px;
+      text-align: center;
       h2 {
         font-size: 18px;
         font-weight: 700;
         margin: 20px 0;
       }
-    }
-  }
-  .imgBox_baby {
-    margin: 0 auto;
-    width: 100%;
-    height: 350px;
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-image: url(../images/main/product/subimage_shop.png);
-    background-size: cover;
-    box-sizing: border-box;
-    .txtBox {
-      margin: 0 auto;
-      color: #fff;
-      text-align: center;
-      padding-top: 225px;
-      line-height: 20px;
-      font-size: 14px;
-
-      h2 {
-        font-size: 18px;
-        font-weight: 700;
-        margin: 20px 0;
+      span {
+        padding-bottom: 30px;
+        font-size: 14px;
+        font-weight: 400;
       }
     }
-  }
-  .imgBox_kid {
-    margin: 0 auto;
-    width: 100%;
-    height: 350px;
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-image: url(../images/main/product/subimage_shop2.png);
-    background-size: cover;
-    box-sizing: border-box;
-    .txtBox {
-      margin: 0 auto;
-      color: #fff;
-      text-align: center;
-      padding-top: 225px;
-      line-height: 20px;
-      font-size: 14px;
-
-      h2 {
-        font-size: 18px;
-        font-weight: 700;
-        margin: 20px 0;
-      }
+    &.all_pro {
+      background-image: url("../images/main/product/subimage_shopall.png");
+    }
+    &.baby {
+      background-image: url("../images/main/product/subimage_shop.png");
+    }
+    &.kid {
+      background-image: url("../images/main/product/subimage_shop2.png");
+    }
+    &.bath {
+      background-image: url("../images/main/product/subimage_shop3.png");
+    }
+    &.pre {
+      background-image: url("../images/main/product/subimage_shop4.png");
     }
   }
-  .imgBox_bath {
-    margin: 0 auto;
-    width: 100%;
-    height: 350px;
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-image: url(../images/main/product/subimage_shop3.png);
-    background-size: cover;
-    box-sizing: border-box;
-    .txtBox {
-      margin: 0 auto;
-      color: #fff;
-      text-align: center;
-      padding-top: 225px;
-      line-height: 20px;
-      font-size: 14px;
 
-      h2 {
-        font-size: 18px;
-        font-weight: 700;
-        margin: 20px 0;
-      }
-    }
-  }
-  .imgBox_pre {
-    margin: 0 auto;
-    width: 100%;
-    height: 350px;
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-image: url(../images/main/product/subimage_shop4.png);
-    background-size: cover;
-    box-sizing: border-box;
-    .txtBox {
-      margin: 0 auto;
-      color: #fff;
-      text-align: center;
-      padding-top: 225px;
-      line-height: 20px;
-      font-size: 14px;
-
-      h2 {
-        font-size: 18px;
-        font-weight: 700;
-        margin: 20px 0;
-      }
-    }
-  }
   .inner {
     margin: 0 auto;
     width: 900px;
@@ -150,11 +89,13 @@
     ul {
       margin: 0 auto;
       padding: 5px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
       li {
         width: 430px;
         height: 640px;
         text-align: center;
-        display: inline-block;
         padding: 5px;
         margin-bottom: 30px;
         img {
@@ -178,6 +119,25 @@
           a {
             font-size: 23px;
           }
+        }
+      }
+    }
+    .soon {
+      height: 300px;
+      margin: 0 auto;
+      text-align: center;
+      color: #777777;
+      font-weight: 500;
+      h3 {
+        display: block;
+        font-size: 30px;
+        height: 30px;
+        line-height: 50px;
+        span {
+          display: block;
+          height: 30px;
+          line-height: 30px;
+          font-size: 20px;
         }
       }
     }

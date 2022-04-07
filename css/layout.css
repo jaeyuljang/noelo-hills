@@ -44,6 +44,8 @@ img { vertical-align: top; }
 
 #header .container .myWrap #top-account #ico-login { margin: 0 15px; }
 
+footer { border-top: 2px solid #ccc; }
+
 footer .container { width: 100%; }
 
 footer .container .up_footer { background-color: #eee; padding: 30px 0; }

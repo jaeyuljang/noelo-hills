@@ -4,45 +4,35 @@
 
 #main .title_menu strong { margin-top: 30px; padding: 30px 30px; color: gray; font-weight: 700; }
 
-#main .title_menu ul { margin: 0 auto; margin-top: 30px; width: 900px; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; padding: 0 30px; }
+#main .title_menu ul { margin: 0 auto; margin-top: 30px; width: 800px; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; padding: 0 30px; }
 
-#main .title_menu ul a { font-weight: 500; }
+#main .title_menu ul li a { font-size: 14px; font-weight: 400; color: #777777; }
 
-#main .imgBox { margin: 0 auto; width: 100%; height: 350px; background-repeat: no-repeat; background-position: 50%; background-image: url(../images/main/product/subimage_shopall.png); background-size: cover; -webkit-box-sizing: border-box; box-sizing: border-box; }
+#main .title_menu ul li.on a { font-size: 14px; font-weight: 400; color: #ffcc00; }
 
-#main .imgBox .txtBox { margin: 0 auto; color: #fff; text-align: center; padding-top: 225px; line-height: 20px; font-size: 14px; }
+#main .imgBox { margin: 0 auto; width: 100%; height: 350px; background-repeat: no-repeat; background-position: 50%; background-size: cover; -webkit-box-sizing: border-box; box-sizing: border-box; padding-top: 200px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: reverse; -ms-flex-direction: column-reverse; flex-direction: column-reverse; -webkit-box-pack: flex-first; -ms-flex-pack: flex-first; justify-content: flex-first; }
+
+#main .imgBox .txtBox { margin: 0 auto; color: #fff; display: block; line-height: 20px; font-size: 14px; padding-bottom: 20px; text-align: center; }
 
 #main .imgBox .txtBox h2 { font-size: 18px; font-weight: 700; margin: 20px 0; }
 
-#main .imgBox_baby { margin: 0 auto; width: 100%; height: 350px; background-repeat: no-repeat; background-position: 50%; background-image: url(../images/main/product/subimage_shop.png); background-size: cover; -webkit-box-sizing: border-box; box-sizing: border-box; }
+#main .imgBox .txtBox span { padding-bottom: 30px; font-size: 14px; font-weight: 400; }
 
-#main .imgBox_baby .txtBox { margin: 0 auto; color: #fff; text-align: center; padding-top: 225px; line-height: 20px; font-size: 14px; }
+#main .imgBox.all_pro { background-image: url("../images/main/product/subimage_shopall.png"); }
 
-#main .imgBox_baby .txtBox h2 { font-size: 18px; font-weight: 700; margin: 20px 0; }
+#main .imgBox.baby { background-image: url("../images/main/product/subimage_shop.png"); }
 
-#main .imgBox_kid { margin: 0 auto; width: 100%; height: 350px; background-repeat: no-repeat; background-position: 50%; background-image: url(../images/main/product/subimage_shop2.png); background-size: cover; -webkit-box-sizing: border-box; box-sizing: border-box; }
+#main .imgBox.kid { background-image: url("../images/main/product/subimage_shop2.png"); }
 
-#main .imgBox_kid .txtBox { margin: 0 auto; color: #fff; text-align: center; padding-top: 225px; line-height: 20px; font-size: 14px; }
+#main .imgBox.bath { background-image: url("../images/main/product/subimage_shop3.png"); }
 
-#main .imgBox_kid .txtBox h2 { font-size: 18px; font-weight: 700; margin: 20px 0; }
-
-#main .imgBox_bath { margin: 0 auto; width: 100%; height: 350px; background-repeat: no-repeat; background-position: 50%; background-image: url(../images/main/product/subimage_shop3.png); background-size: cover; -webkit-box-sizing: border-box; box-sizing: border-box; }
-
-#main .imgBox_bath .txtBox { margin: 0 auto; color: #fff; text-align: center; padding-top: 225px; line-height: 20px; font-size: 14px; }
-
-#main .imgBox_bath .txtBox h2 { font-size: 18px; font-weight: 700; margin: 20px 0; }
-
-#main .imgBox_pre { margin: 0 auto; width: 100%; height: 350px; background-repeat: no-repeat; background-position: 50%; background-image: url(../images/main/product/subimage_shop4.png); background-size: cover; -webkit-box-sizing: border-box; box-sizing: border-box; }
-
-#main .imgBox_pre .txtBox { margin: 0 auto; color: #fff; text-align: center; padding-top: 225px; line-height: 20px; font-size: 14px; }
-
-#main .imgBox_pre .txtBox h2 { font-size: 18px; font-weight: 700; margin: 20px 0; }
+#main .imgBox.pre { background-image: url("../images/main/product/subimage_shop4.png"); }
 
 #main .inner { margin: 0 auto; width: 900px; padding: 30px 0; }
 
-#main .inner ul { margin: 0 auto; padding: 5px; }
+#main .inner ul { margin: 0 auto; padding: 5px; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
-#main .inner ul li { width: 430px; height: 640px; text-align: center; display: inline-block; padding: 5px; margin-bottom: 30px; }
+#main .inner ul li { width: 430px; height: 640px; text-align: center; padding: 5px; margin-bottom: 30px; }
 
 #main .inner ul li img { width: 100%; }
 
@@ -55,3 +45,9 @@
 #main .inner ul li .cart { width: 100%; padding: 10px 0; border: 1px solid #ccc; }
 
 #main .inner ul li .cart a { font-size: 23px; }
+
+#main .inner .soon { height: 300px; margin: 0 auto; text-align: center; color: #777777; font-weight: 500; }
+
+#main .inner .soon h3 { display: block; font-size: 30px; height: 30px; line-height: 50px; }
+
+#main .inner .soon h3 span { display: block; height: 30px; line-height: 30px; font-size: 20px; }
