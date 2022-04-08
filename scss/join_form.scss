@@ -1,0 +1,162 @@
+body {
+  overflow-x: hidden;
+}
+table {
+  tr {
+    border-top: 1px solid #959ea6;
+    border-bottom: 1px solid #959ea6;
+  }
+  td {
+    border-top: 1px solid #959ea6;
+    border-bottom: 1px solid #959ea6;
+  }
+}
+.title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 500;
+  color: #777777;
+  margin-bottom: 50px;
+}
+input[type="text"],
+input[type="number"],
+input[type="password"] {
+  border: none;
+  font-size: 15px;
+  border-bottom: 1px solid #959ea6;
+  padding: 5px;
+  width: 500px;
+  height: 30px;
+  outline: none;
+}
+.inner {
+  width: 900px;
+  margin: 0 auto;
+  h2 {
+    text-align: center;
+  }
+}
+.field {
+  display: flex;
+  justify-content: center;
+  fieldset {
+    border: none;
+    .save {
+      display: flex;
+      padding: 10px 0;
+      align-items: center;
+    }
+  }
+}
+.btns {
+  display: flex;
+  justify-content: center;
+}
+#joinSection,
+#LoginSection,
+#updateSection {
+  .container {
+    .title {
+      margin-top: 50px;
+    }
+    p {
+      margin-top: 15px;
+    }
+    .update_require {
+      padding: 20px 0;
+      display: flex;
+      justify-content: space-between;
+      h3 {
+        font-size: 24px;
+        color: #777777;
+      }
+      p {
+        font-size: 16px;
+        color: #777777;
+        margin: auto 0;
+        span {
+          color: #f9ce42;
+        }
+      }
+    }
+    width: 1470px;
+    margin: auto;
+    table {
+      width: 100%;
+      margin-bottom: 30px;
+      tr {
+        width: 100%;
+        th {
+          width: 150px;
+          padding: 20px;
+          background-color: #fbfafa;
+          vertical-align: middle;
+          text-align: center;
+        }
+        td {
+          padding: 30px;
+        }
+      }
+      #phoneFirst {
+        padding: 5px;
+        height: 30px;
+      }
+      .short {
+        width: 100px;
+        border: none;
+        border-bottom: 1px solid #959ea6;
+        font-size: 15px;
+      }
+    }
+    .baseTable {
+      margin-bottom: 50px;
+      .mobileCheckLink {
+        margin-top: 10px;
+        display: inline-block;
+        border: none;
+        text-decoration: none;
+        color: #fff;
+        background-color: rgb(218, 214, 19);
+        padding: 0 20px;
+        height: 38px;
+        line-height: 38px;
+        text-align: center;
+      }
+    }
+    .agreeCheckBox {
+      background-color: #fbfafa;
+      padding: 30px;
+      .agreeBox {
+        margin-bottom: 20px;
+      }
+      .contents {
+        background-color: #fff;
+        padding: 20px;
+        height: 90px;
+        overflow-y: auto;
+        font-size: 13px;
+      }
+    }
+    .update_bottom {
+      width: 100%;
+      margin: 0 auto 100px;
+      text-align: center;
+      a {
+        display: inline-block;
+        width: 200px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 16px;
+        padding: 0 25px;
+        &.btn_b {
+          background-color: #ffcc00;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+#LoginSection {
+  margin-top: 100px;
+}
