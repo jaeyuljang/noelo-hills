@@ -1,24 +1,24 @@
 body { overflow-x: hidden; }
 
-table tr { border-top: 1px solid #959ea6; border-bottom: 1px solid #959ea6; }
+#joinSection table tr, #LoginSection table tr, #updateSection table tr { border-top: 1px solid #959ea6; border-bottom: 1px solid #959ea6; }
 
-table td { border-top: 1px solid #959ea6; border-bottom: 1px solid #959ea6; }
+#joinSection table td, #LoginSection table td, #updateSection table td { border-top: 1px solid #959ea6; border-bottom: 1px solid #959ea6; }
 
-.title { text-align: center; font-size: 36px; font-weight: 500; color: #777777; margin-bottom: 50px; }
+#joinSection .title, #LoginSection .title, #updateSection .title { text-align: center; font-size: 36px; font-weight: 500; color: #777777; margin-bottom: 50px; }
 
-input[type="text"], input[type="number"], input[type="password"] { border: none; font-size: 15px; border-bottom: 1px solid #959ea6; padding: 5px; width: 500px; height: 30px; outline: none; }
+#joinSection input[type="text"], #joinSection input[type="number"], #joinSection input[type="password"], #LoginSection input[type="text"], #LoginSection input[type="number"], #LoginSection input[type="password"], #updateSection input[type="text"], #updateSection input[type="number"], #updateSection input[type="password"] { border: none; font-size: 15px; border-bottom: 1px solid #959ea6; padding: 5px; width: 500px; height: 30px; outline: none; }
 
-.inner { width: 900px; margin: 0 auto; }
+#joinSection .inner, #LoginSection .inner, #updateSection .inner { width: 900px; margin: 0 auto; }
 
-.inner h2 { text-align: center; }
+#joinSection .inner h2, #LoginSection .inner h2, #updateSection .inner h2 { text-align: center; }
 
-.field { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+#joinSection .field, #LoginSection .field, #updateSection .field { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
-.field fieldset { border: none; }
+#joinSection .field fieldset, #LoginSection .field fieldset, #updateSection .field fieldset { border: none; }
 
-.field fieldset .save { display: -webkit-box; display: -ms-flexbox; display: flex; padding: 10px 0; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+#joinSection .field fieldset .save, #LoginSection .field fieldset .save, #updateSection .field fieldset .save { display: -webkit-box; display: -ms-flexbox; display: flex; padding: 10px 0; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
-.btns { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+#joinSection .btns, #LoginSection .btns, #updateSection .btns { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
 #joinSection .container, #LoginSection .container, #updateSection .container { width: 1470px; margin: auto; }
 

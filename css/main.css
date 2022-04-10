@@ -116,7 +116,7 @@
 
 #main .cart .order-Check .orderList h3 { text-align: left; padding: 20px 0; }
 
-#main .cart .order-Check .orderList .cart-table table { width: 100%; border-top: 2px solid #c3cfd9 !important; vertical-align: middle; }
+#main .cart .order-Check .orderList .cart-table table { width: 100%; border-top: 1px solid #c3cfd9 !important; vertical-align: middle; }
 
 #main .cart .order-Check .orderList .cart-table table tbody tr { border-bottom: 1px solid #d4d4d4; padding: 20px 0; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 

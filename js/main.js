@@ -44,11 +44,9 @@ $(document).ready(function () {
     $(".state_select").addClass("off");
   });
 });
-// const gnbList = $("#gnb li");
-// gnbList.on("click", function (e) {
-//   e.preventDefault();
-//   const jsonFile = $(this).data("json");
-//   if ($(this).hasClass("selected")) return;
-//   $(this).addClass("selected").siblings("li").removeClass("selected");
-//   loadJson(jsonFile);
-// });
+//관심상품 Wish-list 체크박스 설정
+$(document).ready(function () {
+  $(".check-all").click(function () {
+    $(".w_ch").prop("checked", this.checked);
+  });
+});
