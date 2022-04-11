@@ -128,26 +128,94 @@
 
 #main .myCupon { margin: 0 auto; width: 1480px; }
 
-#main .myCupon .tbltitle h3 { display: inline-block; font-size: 18px; color: #676e73; font-weight: 500; }
+#main .myCupon .myshop-cuponlist .tbltitle { margin: 20px 0; }
 
-#main .myCupon .tbltitle p { float: right; font-size: 14px; color: #777777; font-weight: 500; }
+#main .myCupon .myshop-cuponlist .tbltitle h3 { display: inline-block; font-size: 18px; color: #676e73; font-weight: 500; }
 
-#main .myCupon .tbltitle p span { color: #f9ce42; font-size: 14px; font-weight: 500; }
+#main .myCupon .myshop-cuponlist .tbltitle p { float: right; font-size: 14px; color: #777777; font-weight: 500; }
 
-#main .myCupon .cupon_list_table table { width: 100%; }
+#main .myCupon .myshop-cuponlist .tbltitle p span { color: #f9ce42; font-size: 14px; font-weight: 500; }
 
-#main .myCupon .cupon_list_table table thead { border-top: 1px solid #959ea6; }
+#main .myCupon .myshop-cuponlist .cupon_list_table table { width: 100%; }
 
-#main .myCupon .cupon_list_table table thead tr { border-bottom: 1px solid #959ea6; }
+#main .myCupon .myshop-cuponlist .cupon_list_table table thead { border-top: 1px solid #959ea6; }
 
-#main .myCupon .cupon_list_table table thead tr th { vertical-align: middle; padding: 15px 0; font-weight: 500; color: #959ea6; }
+#main .myCupon .myshop-cuponlist .cupon_list_table table thead tr { border-bottom: 1px solid #959ea6; }
 
-#main .myCupon .cupon_list_table table tbody tr { border-bottom: 1px solid #959ea6; }
+#main .myCupon .myshop-cuponlist .cupon_list_table table thead tr th { vertical-align: middle; padding: 15px 0; font-weight: 500; color: #959ea6; }
 
-#main .myCupon .cupon_list_table table tbody tr td { text-align: center; vertical-align: middle; padding: 15px 0; font-size: 14px; font-weight: 500; color: #676e73; }
+#main .myCupon .myshop-cuponlist .cupon_list_table table tbody tr { border-bottom: 1px solid #959ea6; }
+
+#main .myCupon .myshop-cuponlist .cupon_list_table table tbody tr td { text-align: center; vertical-align: middle; padding: 15px 0; font-size: 14px; font-weight: 500; color: #676e73; }
 
 #main .myCupon .order_page { margin: 50px 0 10px; height: 24px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
 #main .myCupon .order_page a { margin: 0 5px; }
 
 #main .myCupon .order_page ol li a { line-height: 24px; }
+
+#main .myCupon .myshop_cupon_serial .c_title { margin: 20px 0; }
+
+#main .myCupon .myshop_cupon_serial .c_title h3 { font-size: 18px; color: #676e73; font-weight: 500; }
+
+#main .myCupon .myshop_cupon_serial .cuponSerial { width: 100%; text-align: center; padding: 30px; background-color: #f9f9f9; border-radius: 25px; margin-bottom: 30px; }
+
+#main .myCupon .myshop_cupon_serial .cuponSerial fieldset legend { visibility: hidden; }
+
+#main .myCupon .myshop_cupon_serial .cuponSerial fieldset input { display: inline-block; width: 365px; height: 40px; border: 1px solid #c3cfd9; border-radius: 10px; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+#main .myCupon .myshop_cupon_serial .cuponSerial fieldset a { display: inline-block; margin-left: 10px; width: 120px; height: 40px; line-height: 40px; background: #f9ce42; color: #fff; border-radius: 10px; font-weight: 500; font-size: 16px; vertical-align: middle; }
+
+#main .myCupon .myshop_cupon_serial .cuponSerial fieldset p { padding-top: 15px; font-size: 14px; color: #959ea6; font-weight: 500; line-height: 22px; }
+
+#main .myCupon .myshop_cupon_serial .base_help { margin-bottom: 50px; }
+
+#main .myCupon .myshop_cupon_serial .base_help h3 { font-size: 18px; color: #676e73; font-weight: 500; }
+
+#main .myCupon .myshop_cupon_serial .base_help .cupon_inner ul { color: #959ea6; margin-top: 20px; padding-left: 20px; list-style: disc; line-height: 30px; }
+
+#main .board_list { width: 1480px; margin: 0 auto; }
+
+#main .board_list .board_listhead { text-align: right; }
+
+#main .board_list .board_listhead p { font-size: 16px; color: #777777; }
+
+#main .board_list .board_listhead p select { width: 130px; margin-left: 10px; height: 40px; padding: 0 10px; border-color: #c3cfd9; font-size: 16px; color: #777777; -webkit-appearance: none; -moz-appearance: none; appearance: none; background-image: url("../images/common/arr-select.png"); background-repeat: no-repeat; appearance: none; background-position: 95%; }
+
+#main .board_list .board_inputbox { margin-bottom: 250px; }
+
+#main .board_list .board_inputbox fieldset { margin: 0 auto; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+#main .board_list .board_inputbox fieldset select { padding: 0 10px; width: 100px; height: 40px; display: inline-block; -webkit-box-sizing: border-box; box-sizing: border-box; border: 1px solid #c3cfd9; background-image: url("../images/common/arr-select.png"); background-repeat: no-repeat; -webkit-appearance: none; -moz-appearance: none; appearance: none; background-position: 95%; }
+
+#main .board_list .board_inputbox fieldset .board_search { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+#main .board_list .board_inputbox fieldset .board_search input { display: inline-block; margin-left: 5px; border: 1px solid #c3cfd9; width: 300px; height: 40px; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+#main .board_list .board_inputbox fieldset .board_search a { margin-left: 5px; display: block; height: 40px; line-height: 40px; padding: 0 20px; -webkit-box-sizing: border-box; box-sizing: border-box; background-color: #f9ce42; color: #fff; }
+
+#main .my_address { width: 1480px; margin: 0 auto; }
+
+#main .my_address .address_Info { width: 100%; }
+
+#main .my_address .address_Info ul { border-top: 1px solid #777777; border-bottom: 1px solid #777777; }
+
+#main .my_address .address_Info ul li { padding: 20px 5px 20px 30px; line-height: 25px; position: relative; }
+
+#main .my_address .address_Info ul li div p .tnlBtn { position: absolute; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); right: 20px; display: inline-block; padding: 0 20px; height: 40px; line-height: 40px; font-size: 16px; color: #777777; -webkit-box-sizing: border-box; box-sizing: border-box; border: 1px solid #c3cfd9; }
+
+#main .my_address .address_Info ul li:nth-child(1) { border-bottom: 1px solid #959ea6; }
+
+#main .my_address .no_add { margin: 10px 0; }
+
+#main .my_address .no_add p { color: #777777; }
+
+#main .my_address .base_button { text-align: right; margin: 15px 0; }
+
+#main .my_address .base_button span a { padding: 10px 20px; background-color: #ffcc00; color: #fff; }
+
+#main .my_address .address_head { margin-top: 30px; margin-bottom: 150px; }
+
+#main .my_address .address_head h3 { font-size: 18px; color: #676e73; font-weight: 500; }
+
+#main .my_address .address_head .address_inner ul { color: #959ea6; margin-top: 20px; padding-left: 20px; list-style: disc; line-height: 30px; }

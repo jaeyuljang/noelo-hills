@@ -321,9 +321,9 @@
           display: flex;
           justify-content: center;
           input {
+            display: inline-block;
             margin-left: 5px;
             border: 1px solid #c3cfd9;
-            display: inline-block;
             width: 300px;
             height: 40px;
             box-sizing: border-box;

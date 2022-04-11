@@ -108,6 +108,6 @@
 
 #main .consult .consult_inputbox .boardsearch .consult_search { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
-#main .consult .consult_inputbox .boardsearch .consult_search input { margin-left: 5px; border: 1px solid #c3cfd9; display: inline-block; width: 300px; height: 40px; -webkit-box-sizing: border-box; box-sizing: border-box; }
+#main .consult .consult_inputbox .boardsearch .consult_search input { display: inline-block; margin-left: 5px; border: 1px solid #c3cfd9; width: 300px; height: 40px; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 #main .consult .consult_inputbox .boardsearch .consult_search a { margin-left: 5px; display: block; height: 40px; line-height: 40px; padding: 0 20px; -webkit-box-sizing: border-box; box-sizing: border-box; background-color: #f9ce42; color: #fff; }

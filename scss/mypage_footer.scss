@@ -353,50 +353,53 @@
   .myCupon {
     margin: 0 auto;
     width: 1480px;
-    .tbltitle {
-      h3 {
-        display: inline-block;
-        font-size: 18px;
-        color: #676e73;
-        font-weight: 500;
-      }
-      p {
-        float: right;
-        font-size: 14px;
-        color: #777777;
-        font-weight: 500;
-        span {
-          color: #f9ce42;
-          font-size: 14px;
+    .myshop-cuponlist {
+      .tbltitle {
+        margin: 20px 0;
+        h3 {
+          display: inline-block;
+          font-size: 18px;
+          color: #676e73;
           font-weight: 500;
         }
-      }
-    }
-    .cupon_list_table {
-      table {
-        width: 100%;
-        thead {
-          border-top: 1px solid #959ea6;
-          tr {
-            border-bottom: 1px solid #959ea6;
-            th {
-              vertical-align: middle;
-              padding: 15px 0;
-              font-weight: 500;
-              color: #959ea6;
-            }
+        p {
+          float: right;
+          font-size: 14px;
+          color: #777777;
+          font-weight: 500;
+          span {
+            color: #f9ce42;
+            font-size: 14px;
+            font-weight: 500;
           }
         }
-        tbody {
-          tr {
-            border-bottom: 1px solid #959ea6;
-            td {
-              text-align: center;
-              vertical-align: middle;
-              padding: 15px 0;
-              font-size: 14px;
-              font-weight: 500;
-              color: #676e73;
+      }
+      .cupon_list_table {
+        table {
+          width: 100%;
+          thead {
+            border-top: 1px solid #959ea6;
+            tr {
+              border-bottom: 1px solid #959ea6;
+              th {
+                vertical-align: middle;
+                padding: 15px 0;
+                font-weight: 500;
+                color: #959ea6;
+              }
+            }
+          }
+          tbody {
+            tr {
+              border-bottom: 1px solid #959ea6;
+              td {
+                text-align: center;
+                vertical-align: middle;
+                padding: 15px 0;
+                font-size: 14px;
+                font-weight: 500;
+                color: #676e73;
+              }
             }
           }
         }
@@ -419,6 +422,214 @@
       }
     } //order_page_end
     .myshop_cupon_serial {
+      .c_title {
+        margin: 20px 0;
+        h3 {
+          font-size: 18px;
+          color: #676e73;
+          font-weight: 500;
+        }
+      }
+      .cuponSerial {
+        width: 100%;
+        text-align: center;
+        padding: 30px;
+        background-color: #f9f9f9;
+        border-radius: 25px;
+        margin-bottom: 30px;
+        fieldset {
+          legend {
+            visibility: hidden;
+          }
+          input {
+            display: inline-block;
+            width: 365px;
+            height: 40px;
+            border: 1px solid #c3cfd9;
+            border-radius: 10px;
+            box-sizing: border-box;
+          }
+          a {
+            display: inline-block;
+            margin-left: 10px;
+            width: 120px;
+            height: 40px;
+            line-height: 40px;
+            background: #f9ce42;
+            color: #fff;
+            border-radius: 10px;
+            font-weight: 500;
+            font-size: 16px;
+            vertical-align: middle;
+          }
+          p {
+            padding-top: 15px;
+            font-size: 14px;
+            color: #959ea6;
+            font-weight: 500;
+            line-height: 22px;
+          }
+        }
+      }
+      .base_help {
+        margin-bottom: 50px;
+        h3 {
+          font-size: 18px;
+          color: #676e73;
+          font-weight: 500;
+        }
+        .cupon_inner {
+          ul {
+            color: #959ea6;
+            margin-top: 20px;
+            padding-left: 20px;
+            list-style: disc;
+            line-height: 30px;
+          }
+        }
+      }
+    }
+  } //cupon end
+
+  //게시물 관리
+  .board_list {
+    width: 1480px;
+    margin: 0 auto;
+    .board_listhead {
+      text-align: right;
+      p {
+        font-size: 16px;
+        color: #777777;
+        select {
+          width: 130px;
+          margin-left: 10px;
+          height: 40px;
+          padding: 0 10px;
+          border-color: #c3cfd9;
+          font-size: 16px;
+          color: #777777;
+          appearance: none;
+          background-image: url("../images/common/arr-select.png");
+          background-repeat: no-repeat;
+          appearance: none;
+          background-position: 95%;
+        }
+      }
+    }
+    .board_inputbox {
+      margin-bottom: 250px;
+      fieldset {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        select {
+          padding: 0 10px;
+          width: 100px;
+          height: 40px;
+          display: inline-block;
+          box-sizing: border-box;
+          border: 1px solid #c3cfd9;
+          background-image: url("../images/common/arr-select.png");
+          background-repeat: no-repeat;
+          appearance: none;
+          background-position: 95%;
+        }
+        .board_search {
+          display: flex;
+          justify-content: center;
+          input {
+            display: inline-block;
+            margin-left: 5px;
+            border: 1px solid #c3cfd9;
+            width: 300px;
+            height: 40px;
+            box-sizing: border-box;
+          }
+          a {
+            margin-left: 5px;
+            display: block;
+            height: 40px;
+            line-height: 40px;
+            padding: 0 20px;
+            box-sizing: border-box;
+            background-color: #f9ce42;
+            color: #fff;
+          }
+        }
+      }
+    }
+  } // 게시물 관리 종료 board_inputbox end
+  // 마이페이지_어드레스
+  .my_address {
+    width: 1480px;
+    margin: 0 auto;
+    .address_Info {
+      width: 100%;
+      ul {
+        border-top: 1px solid #777777;
+        border-bottom: 1px solid #777777;
+        li {
+          padding: 20px 5px 20px 30px;
+          line-height: 25px;
+          position: relative;
+          div {
+            p {
+              .tnlBtn {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 20px;
+                display: inline-block;
+                padding: 0 20px;
+                height: 40px;
+                line-height: 40px;
+                font-size: 16px;
+                color: #777777;
+                box-sizing: border-box;
+                border: 1px solid #c3cfd9;
+              }
+            }
+          }
+          &:nth-child(1) {
+            border-bottom: 1px solid #959ea6;
+          }
+        }
+      }
+    }
+    .no_add {
+      margin: 10px 0;
+      p {
+        color: #777777;
+      }
+    }
+    .base_button {
+      text-align: right;
+      margin: 15px 0;
+      span {
+        a {
+          padding: 10px 20px;
+          background-color: #ffcc00;
+          color: #fff;
+        }
+      }
+    }
+    .address_head {
+      margin-top: 30px;
+      margin-bottom: 150px;
+      h3 {
+        font-size: 18px;
+        color: #676e73;
+        font-weight: 500;
+      }
+      .address_inner {
+        ul {
+          color: #959ea6;
+          margin-top: 20px;
+          padding-left: 20px;
+          list-style: disc;
+          line-height: 30px;
+        }
+      }
     }
   }
 }
