@@ -18,15 +18,15 @@
 
 #main .imgBox .txtBox span { padding-bottom: 30px; font-size: 14px; font-weight: 400; }
 
-#main .imgBox.all_pro { background-image: url("../images/main/product/subimage_shopall.png"); }
+#main .imgBox.all_pro { background-image: url("../images/shop_main/subimage_shopall.png"); }
 
-#main .imgBox.baby { background-image: url("../images/main/product/subimage_shop.png"); }
+#main .imgBox.baby { background-image: url("../images/shop_main/subimage_shop.png"); }
 
-#main .imgBox.kid { background-image: url("../images/main/product/subimage_shop2.png"); }
+#main .imgBox.kid { background-image: url("../images/shop_main/subimage_shop2.png"); }
 
-#main .imgBox.bath { background-image: url("../images/main/product/subimage_shop3.png"); }
+#main .imgBox.bath { background-image: url("../images/shop_main/subimage_shop3.png"); }
 
-#main .imgBox.pre { background-image: url("../images/main/product/subimage_shop4.png"); }
+#main .imgBox.pre { background-image: url("../images/shop_main/subimage_shop4.png"); }
 
 #main .inner { margin: 0 auto; width: 900px; padding: 30px 0; }
 

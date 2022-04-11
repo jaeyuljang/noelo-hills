@@ -18,7 +18,7 @@
 
 #main .order_info .order_menu .order-history fieldset { padding: 30px; border: 1px solid #c3cfd9; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; }
 
-#main .order_info .order_menu .order-history fieldset .state_select select { width: 200px; height: 40px; border-color: #c3cfd9; font-size: 16px; padding-left: 10px; }
+#main .order_info .order_menu .order-history fieldset .state_select select { width: 200px; height: 40px; border-color: #c3cfd9; font-size: 16px; padding-left: 10px; -webkit-appearance: none; -moz-appearance: none; appearance: none; background-image: url("../images/common/arr-select.png"); background-repeat: no-repeat; background-position: 95%; }
 
 #main .order_info .order_menu .order-history fieldset .state_select.off { display: none; }
 

@@ -1,0 +1,75 @@
+<? include("../include/header.html"); ?>
+<main id="main">
+  <div class="myCupon">
+    <div class="titleArea">
+      <h1>쿠폰</h1>
+    </div>
+    <form action="">
+      <div class="myshop-cuponlist">
+        <div class="tbltitle">
+          <h3>마이 쿠폰 목록</h3>
+          <p>사용가능 쿠폰 <span>3</span>장</p>
+        </div>
+        <div class="cupon_list_table">
+          <table border="1">
+            <colgroup>
+              <col style="width: 45px" />
+              <col style="width: auto" />
+              <col style="width: 130px" />
+              <col style="width: 130px" />
+              <col style="width: 130px" />
+              <col style="width: 130px" />
+              <col style="width: 170px" />
+            </colgroup>
+            <thead>
+              <tr>
+                <th scope="col">번호</th>
+                <th scope="col">쿠폰명</th>
+                <th scope="col">쿠폰적용 상품</th>
+                <th scope="col">구매금액</th>
+                <th scope="col">결제수단</th>
+                <th scope="col">쿠폰 혜택</th>
+                <th scope="col">사용가능 기간</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row">1</td>
+                <td scope="row">첫 구매 지원 2,000원 할인 쿠폰</td>
+                <td scope="row">전체상품</td>
+                <td scope="row">20000원</td>
+                <td scope="row">제한없음</td>
+                <td scope="row">할인 2,000원</td>
+                <td scope="row">2022-04-04 16:04:42 ~ 2022-07-03 16:04:42</td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- 관심상픔 내역이이 없을 경우
+          <p class="message">관심상품 내역이 없습니다.</p> -->
+        </div>
+      </div>
+    </form>
+    <div class="order_page">
+      <a href=""><img src="../images/common/page_bottom/btn_page_first.png" alt="" /></a>
+      <a href=""><img src="../images/common/page_bottom/btn_page_prev.png" alt="" /></a>
+      <ol>
+        <li><a href="">1</a></li>
+      </ol>
+      <a href=""><img src="../images/common/page_bottom/btn_page_next.png" alt="" /></a>
+      <a href=""><img src="../images/common/page_bottom/btn_page_last.png" alt="" /></a>
+    </div>
+    <div class="myshop_cupon_serial">
+      <div class="c_title">
+        <h3>쿠폰인증번호 등록하기</h3>
+      </div>
+      <div class="cuponSerial">
+        <fieldset>
+          <legend>쿠폰번호 등록</legend>
+          <input type="text" />
+          <a href="">쿠폰번호 인증</a>
+        </fieldset>
+      </div>
+    </div>
+  </div>
+</main>
+<? include("../include/footer.html"); ?>
