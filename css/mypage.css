@@ -111,3 +111,33 @@
 #main .consult .consult_inputbox .boardsearch .consult_search input { display: inline-block; margin-left: 5px; border: 1px solid #c3cfd9; width: 300px; height: 40px; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 #main .consult .consult_inputbox .boardsearch .consult_search a { margin-left: 5px; display: block; height: 40px; line-height: 40px; padding: 0 20px; -webkit-box-sizing: border-box; box-sizing: border-box; background-color: #f9ce42; color: #fff; }
+
+#main .my_consult_write { width: 1480px; margin: 0 auto; }
+
+#main .my_consult_write .c_write_table table { width: 100%; border: 1px solid #c3cfd9; }
+
+#main .my_consult_write .c_write_table table tbody tr { border-bottom: 1px solid #c3cfd9; }
+
+#main .my_consult_write .c_write_table table tbody tr th { vertical-align: middle; width: 150px; background-color: #fbfafa; }
+
+#main .my_consult_write .c_write_table table tbody tr td { padding: 20px 20px; font-size: 14px; }
+
+#main .my_consult_write .base_btn { padding: 20px 0; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+#main .my_consult_write .base_btn .gLeft { float: left; text-align: left; }
+
+#main .my_consult_write .base_btn .gLeft a { display: inline-block; font-size: 16px; font-weight: 500; padding: 20px 30px; background-color: #777777; }
+
+#main .my_consult_write .base_btn .gRight { float: right; text-align: right; }
+
+#main .my_consult_write .base_btn .gRight a { display: inline-block; font-size: 16px; font-weight: 500; padding: 20px 30px; }
+
+#main .my_consult_write .base_btn .gRight a:nth-child(2) { color: #fff; background-color: #f9ce42; }
+
+#main .my_consult_write .base_btn:after { content: ""; display: block; clear: both; }
+
+#main .my_consult_write .address_head { margin-top: 30px; margin-bottom: 150px; }
+
+#main .my_consult_write .address_head h3 { font-size: 18px; color: #676e73; font-weight: 500; }
+
+#main .my_consult_write .address_head .address_inner ul { color: #959ea6; margin-top: 20px; padding-left: 20px; list-style: disc; line-height: 30px; }

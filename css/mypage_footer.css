@@ -219,3 +219,45 @@
 #main .my_address .address_head h3 { font-size: 18px; color: #676e73; font-weight: 500; }
 
 #main .my_address .address_head .address_inner ul { color: #959ea6; margin-top: 20px; padding-left: 20px; list-style: disc; line-height: 30px; }
+
+#main .my_adr_register { width: 1480px; margin: 0 auto; }
+
+#main .my_adr_register .adr_regi_table table { width: 100%; border: 1px solid #c3cfd9; border-left: none; border-right: none; }
+
+#main .my_adr_register .adr_regi_table table tbody tr { border-bottom: 1px solid #c3cfd9; }
+
+#main .my_adr_register .adr_regi_table table tbody tr th { vertical-align: middle; width: 150px; background-color: #fbfafa; }
+
+#main .my_adr_register .adr_regi_table table tbody tr th span { color: #f9ce42; }
+
+#main .my_adr_register .adr_regi_table table tbody tr td { padding: 20px 20px; font-size: 14px; }
+
+#main .my_adr_register .adr_regi_table table tbody tr td input[type="text"], #main .my_adr_register .adr_regi_table table tbody tr td input[type="number"], #main .my_adr_register .adr_regi_table table tbody tr td select { height: 50px; border: none; outline: none; border-bottom: 1px solid #959ea6; padding: 5px 5px; font-size: 16px; color: #676e73; -webkit-box-sizing: border-box; box-sizing: border-box; width: 200px; margin-right: 10px; padding-left: 20px; }
+
+#main .my_adr_register .adr_regi_table table tbody tr td button { padding: 10px 15px; background-color: #f9ce42; color: #fff; font-size: 16px; font-weight: 500; cursor: pointer; }
+
+#main .my_adr_register .adr_regi_table table tbody tr:nth-child(3) input[type="number"] { width: 390px; -webkit-appearance: none; -moz-appearance: none; appearance: none; background: url("../images/common/arr-select.png") right 10px center no-repeat; }
+
+#main .my_adr_register .adr_regi_table table tbody tr:nth-child(3) input[type="text"] { width: 500px; }
+
+#main .my_adr_register .adr_regi_table table tbody tr:nth-child(4) select { -webkit-appearance: none; -moz-appearance: none; appearance: none; background: url("../images/common/arr-select.png") right 10px center no-repeat; }
+
+#main .my_adr_register .adr_regi_table table tbody .right td { vertical-align: middle; padding: 10px 10px; height: 44px; text-align: right; font-size: 16px; }
+
+#main .my_adr_register .adr_regi_table table tbody .right td input { -webkit-box-sizing: border-box; box-sizing: border-box; -webkit-appearance: none; -moz-appearance: none; appearance: none; }
+
+#main .my_adr_register .adr_regi_table table tbody .right td label { font-size: 16px; font-weight: 500; color: #777777; cursor: pointer; display: inline-block; padding-left: 33px; width: 150px; height: 34px; line-height: 34px; background: url("../images/common/bg-checkbox.png") right 135px center no-repeat; }
+
+#main .my_adr_register .adr_regi_table table tbody .right td :checked + label { background-image: url("../images/common/bg-checkbox-active.png"); }
+
+#main .my_adr_register .base_btn { text-align: right; padding: 20px 0; }
+
+#main .my_adr_register .base_btn a { display: inline-block; font-size: 16px; font-weight: 500; padding: 20px 50px; }
+
+#main .my_adr_register .base_btn a:nth-child(1) { color: #fff; background-color: #f9ce42; }
+
+#main .my_adr_register .address_head { margin-top: 30px; margin-bottom: 150px; }
+
+#main .my_adr_register .address_head h3 { font-size: 18px; color: #676e73; font-weight: 500; }
+
+#main .my_adr_register .address_head .address_inner ul { color: #959ea6; margin-top: 20px; padding-left: 20px; list-style: disc; line-height: 30px; }

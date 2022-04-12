@@ -342,4 +342,82 @@
       }
     }
   } //consult_end
+  // 1:1 맞춤상담 글쓰기 시작
+  .my_consult_write {
+    width: 1480px;
+    margin: 0 auto;
+
+    .c_write_table {
+      table {
+        width: 100%;
+        border: 1px solid #c3cfd9;
+        tbody {
+          tr {
+            border-bottom: 1px solid #c3cfd9;
+            th {
+              vertical-align: middle;
+              width: 150px;
+              background-color: #fbfafa;
+            }
+            td {
+              padding: 20px 20px;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    } //table _end
+    .base_btn {
+      padding: 20px 0;
+      box-sizing: border-box;
+      .gLeft {
+        float: left;
+        text-align: left;
+        a {
+          display: inline-block;
+          font-size: 16px;
+          font-weight: 500;
+          padding: 20px 30px;
+          background-color: #777777;
+        }
+      }
+      .gRight {
+        float: right;
+        text-align: right;
+        a {
+          display: inline-block;
+          font-size: 16px;
+          font-weight: 500;
+          padding: 20px 30px;
+          &:nth-child(2) {
+            color: #fff;
+            background-color: #f9ce42;
+          }
+        }
+      }
+      &:after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    }
+    .address_head {
+      margin-top: 30px;
+      margin-bottom: 150px;
+      h3 {
+        font-size: 18px;
+        color: #676e73;
+        font-weight: 500;
+      }
+      .address_inner {
+        ul {
+          color: #959ea6;
+          margin-top: 20px;
+          padding-left: 20px;
+          list-style: disc;
+          line-height: 30px;
+        }
+      }
+    }
+  }
 }

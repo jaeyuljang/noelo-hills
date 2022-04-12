@@ -141,5 +141,110 @@
         }
       }
     }
+  } //메인페이지 _end
+  //상품 소개 페이지 시작
+  .shop_pd_info {
+    padding-top: 70px;
+    width: 900px;
+    height: 1000px;
+    margin: 0 auto;
+    border: 1px solid #c3cfd9;
+    .top_pd_menu01 {
+      display: flex;
+      justify-content: space-between;
+      .imgArea {
+        width: 48%;
+        .thumbnail {
+          img {
+            width: 100%;
+          }
+        }
+        .list_img {
+          width: 100%;
+          margin-top: 30px;
+          ul {
+            display: flex;
+            justify-content: space-between;
+            li {
+              cursor: pointer;
+              display: block;
+              width: 19%;
+              img {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+      .infoArea {
+        padding-top: 20px;
+        width: 48%;
+        .info_button_inside {
+          h3 {
+            font-size: 20px;
+            margin: 15px 0;
+          }
+          p {
+            font-size: 14px;
+            margin: 15px 0;
+          }
+        }
+        .total_product {
+          margin: 30px 0;
+          border-top: 1px solid #c3cfd9;
+          border-bottom: 1px solid #c3cfd9;
+          ul {
+            display: flex;
+            justify-content: space-between;
+            li {
+              padding: 10px 0;
+              font-size: 13px;
+              line-height: 30px;
+              margin-right: 30px;
+              align-items: center;
+              a {
+                img {
+                  vertical-align: middle;
+                }
+              }
+              input {
+                vertical-align: middle;
+                text-align: center;
+                box-sizing: border-box;
+                width: 20px;
+                border: none;
+              }
+              &:nth-child(3) {
+                margin-right: 0px;
+                margin-left: 40px;
+              }
+            }
+          }
+        }
+        .total_price {
+          text-align: right;
+          font-size: 17px;
+          font-weight: 600;
+          color: #777777;
+        }
+        .base_btn {
+          margin-top: 30px;
+          display: flex;
+          justify-content: space-between;
+          a {
+            width: 28%;
+            text-align: center;
+            font-weight: 500;
+            padding: 10px 10px;
+            border: 1px solid #c3cfd9;
+            &:nth-child(1) {
+              border: none;
+              background-color: #ffcc00;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
   }
 }
