@@ -52,7 +52,7 @@
 
 #main .inner .soon h3 span { display: block; height: 30px; line-height: 30px; font-size: 20px; }
 
-#main .shop_pd_info { padding-top: 70px; width: 900px; height: 1000px; margin: 0 auto; border: 1px solid #c3cfd9; }
+#main .shop_pd_info { padding: 70px 0; width: 900px; margin: 0 auto; border: 1px solid #c3cfd9; }
 
 #main .shop_pd_info .top_pd_menu01 { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
@@ -93,3 +93,51 @@
 #main .shop_pd_info .top_pd_menu01 .infoArea .base_btn a { width: 28%; text-align: center; font-weight: 500; padding: 10px 10px; border: 1px solid #c3cfd9; }
 
 #main .shop_pd_info .top_pd_menu01 .infoArea .base_btn a:nth-child(1) { border: none; background-color: #ffcc00; color: #fff; }
+
+#main .shop_pd_info .top_pd_menu02 { margin-top: 20px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+
+#main .shop_pd_info .top_pd_menu02 .txtReview .review_score_group { padding: 20px 0 20px 20px; }
+
+#main .shop_pd_info .top_pd_menu02 .txtReview .review_score_group .review_count strong { font-size: 24px; line-height: 24px; color: #707070; margin-right: 4px; }
+
+#main .shop_pd_info .top_pd_menu02 .txtReview .review_score_group .review_score_avg { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; margin-top: 10px; width: 40px; }
+
+#main .shop_pd_info .top_pd_menu02 .txtReview .review_score_group .review_score_avg span { color: #ffcc00; font-size: 15px; }
+
+#main .shop_pd_info .top_pd_menu02 .txtReview .review_score_group .review_score_avg div { font-size: 14px; line-height: 15px; }
+
+#main .shop_pd_info .top_pd_menu02 .txtReview .total_satisfy { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; padding-left: 20px; font-size: 14px; font-weight: 500; }
+
+#main .shop_pd_info .top_pd_menu02 .txtReview .total_satisfy .sati_btn01 { border: 1px solid #ffcc00; border-radius: 20px; color: #ffcc00; padding: 5px 30px; line-height: 20px; }
+
+#main .shop_pd_info .top_pd_menu02 .txtReview .total_satisfy .sati_btn02 { display: -webkit-box; display: -ms-flexbox; display: flex; padding: 5px 10px; line-height: 20px; }
+
+#main .shop_pd_info .top_pd_menu02 .txtReview .total_satisfy .sati_btn02 span { color: #ffcc00; }
+
+#main .shop_pd_info .top_pd_menu02 .imgReview { width: 600px; padding-top: 10px; cursor: pointer; }
+
+#main .shop_pd_info .top_pd_menu02 .imgReview .imgR_title { font-size: 16px; font-weight: 500; }
+
+#main .shop_pd_info .top_pd_menu02 .imgReview .imgR_title span { color: #777777; }
+
+#main .shop_pd_info .top_pd_menu02 .imgReview .imgR_count { margin-top: 15px; display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+#main .shop_pd_info .top_pd_menu02 .imgReview .imgR_count .material-icons { line-height: 100px; }
+
+#main .shop_pd_info .top_pd_menu02 .imgReview .imgR_count .r_imgBox { -webkit-box-sizing: border-box; box-sizing: border-box; width: 100%; height: 100px; border: 1px solid #c3cfd9; background-color: #ccc; }
+
+#main .shop_pd_info .tab_content { margin-top: 50px; }
+
+#main .shop_pd_info .tab_content .tab_nav { border-bottom: 1px solid #c3cfd9; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+#main .shop_pd_info .tab_content .tab_nav li { padding: 10px 20px; font-size: 14px; color: #c3cfd9; }
+
+#main .shop_pd_info .tab_content .cont { display: block; margin: 20px auto; text-align: center; }
+
+#main .shop_pd_info .tab_content .detail_acodion { background-color: #ccc; }
+
+#main .shop_pd_info .tab_content .detail_acodion div { cursor: pointer; }
+
+#main .shop_pd_info .tab_content .detail_acodion div h4 { margin: 10px 0; padding: 20px 20px; background-color: #c3cfd9; }
+
+#main .shop_pd_info .tab_content .detail_acodion div div { background-color: #fff; padding: 20px 20px; }

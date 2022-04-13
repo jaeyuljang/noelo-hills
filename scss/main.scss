@@ -42,6 +42,7 @@
   width: 100%;
   // 메인페이지 슬라이드 이미지 부분
   #mainVisual {
+    height: 910px;
     position: relative;
     ul {
       li {
@@ -108,7 +109,7 @@
       margin: 0 auto;
       text-align: center;
 
-      z-index: 99;
+      z-index: 50;
       .swiper-pagination-bullet {
         width: 10px;
         height: 10px;

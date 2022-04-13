@@ -18,7 +18,7 @@
 
 #main { padding-top: 70px; width: 100%; }
 
-#main #mainVisual { position: relative; }
+#main #mainVisual { height: 910px; position: relative; }
 
 #main #mainVisual ul li { margin: 0 auto; text-align: center; height: 910px; background-color: #eee; background-repeat: no-repeat; -webkit-box-sizing: border-box; box-sizing: border-box; background-position: 50%; background-size: cover; cursor: pointer; position: relative; overflow: hidden; }
 
@@ -38,7 +38,7 @@
 
 #main #mainVisual ul li .promiss button { width: 150px; height: 60px; margin-top: 40px; background-color: #ffcc00; color: #fff; font-size: 25px; }
 
-#main #mainVisual .pagination { position: absolute; top: 60%; left: 50%; -webkit-transform: translate(-50%); transform: translate(-50%); width: 250px; height: 30px; margin: 0 auto; text-align: center; z-index: 99; }
+#main #mainVisual .pagination { position: absolute; top: 60%; left: 50%; -webkit-transform: translate(-50%); transform: translate(-50%); width: 250px; height: 30px; margin: 0 auto; text-align: center; z-index: 50; }
 
 #main #mainVisual .pagination .swiper-pagination-bullet { width: 10px; height: 10px; background: #fff; opacity: 1; border-radius: 100px; }
 
