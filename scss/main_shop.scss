@@ -343,20 +343,103 @@
         text-align: center;
       }
       .detail_acodion {
-        background-color: #ccc;
+        margin-top: 50px;
         div {
+          // box-sizing: border-box;
           h4 {
             margin: 10px 0;
             padding: 20px 20px;
+            overflow: hidden;
             background-color: #c3cfd9;
+            a {
+              display: block;
+              background: url("../images/common/icon_ingredientlist_off.png") right 10px center no-repeat;
+              &.active {
+                background: url("../images/common/icon_ingredientlist_on.png") right 10px center no-repeat;
+              }
+            }
           }
           cursor: pointer;
           div {
+            // display: none;
+            line-height: 25px;
             background-color: #fff;
             padding: 20px 20px;
           }
         }
       }
+      //shop 리뷰 테이블 시작
+      .review_shop_table {
+        margin-top: 30px;
+        table {
+          width: 100%;
+          border: 1px solid #c3cfd9;
+          tbody {
+            tr {
+              border-bottom: 1px solid #c3cfd9;
+              th {
+                vertical-align: middle;
+                width: 60px;
+                background-color: #fbfafa;
+              }
+              td {
+                padding: 10px 10px;
+                font-size: 14px;
+                .title_date {
+                  display: flex;
+                  justify-content: space-between;
+                  .s_r_table {
+                    width: 600px;
+                    li {
+                      padding: 5px 0;
+                      a {
+                        font-size: 16px;
+                        color: #676e73;
+                        font-weight: 500;
+                      }
+                    }
+                  }
+                  .shop_r_date_info {
+                    padding: 10px 0;
+                    line-height: 30px;
+                  }
+                }
+              }
+            }
+            .tr_review_expand {
+              display: none;
+            }
+          }
+        }
+      } //table _end
+      .table_bottom_btn {
+        text-align: right;
+        button {
+          margin: 20px auto 30px;
+          background-color: #ffcc00;
+          padding: 10px 20px;
+          font-size: 16px;
+          font-weight: 500;
+          color: #fff;
+        }
+      }
+      .order_page {
+        margin: 50px 0 10px;
+        height: 24px;
+        display: flex;
+        justify-content: center;
+        a {
+          margin: 0 5px;
+        }
+        ol {
+          li {
+            display: inline;
+            a {
+              line-height: 24px;
+            }
+          }
+        }
+      } //order_page_end
     }
   }
 }

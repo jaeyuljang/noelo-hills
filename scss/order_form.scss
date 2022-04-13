@@ -1,0 +1,74 @@
+body {
+  width: 900px;
+  border: 1px solid #959ea6;
+  margin: 0 auto;
+}
+header {
+  padding-top: 20px;
+  width: 900px;
+  //   height: 100px;
+  z-index: 50;
+  .header_top {
+    display: flex;
+    justify-content: space-between;
+    .orderLogo {
+      a {
+        display: block;
+        img {
+          width: 160px;
+          height: 60px;
+        }
+      }
+    }
+    .hLeft {
+      position: relative;
+      a {
+        margin-left: 20px;
+        display: block;
+        width: 30px;
+        height: 30px;
+        background-image: url("../images/order_form/sfix_header.png");
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: cover;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    .hRight {
+      position: relative;
+      a {
+        margin-right: 10px;
+        display: block;
+        width: 30px;
+        height: 30px;
+        background-image: url("../images/order_form/sfix_header.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        top: 50%;
+        right: 35px;
+        transform: translateY(-50%);
+        &:nth-child(2) {
+          background-position: right;
+          right: 0;
+        }
+      }
+    }
+  }
+  .header_bottom {
+    overflow: hidden;
+    margin-top: 10px;
+    line-height: 50px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+    background-color: #4a5164;
+    box-sizing: border-box;
+  }
+} //header_end
+#main_order {
+}

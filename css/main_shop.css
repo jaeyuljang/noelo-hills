@@ -134,10 +134,48 @@
 
 #main .shop_pd_info .tab_content .cont { display: block; margin: 20px auto; text-align: center; }
 
-#main .shop_pd_info .tab_content .detail_acodion { background-color: #ccc; }
+#main .shop_pd_info .tab_content .detail_acodion { margin-top: 50px; }
 
 #main .shop_pd_info .tab_content .detail_acodion div { cursor: pointer; }
 
-#main .shop_pd_info .tab_content .detail_acodion div h4 { margin: 10px 0; padding: 20px 20px; background-color: #c3cfd9; }
+#main .shop_pd_info .tab_content .detail_acodion div h4 { margin: 10px 0; padding: 20px 20px; overflow: hidden; background-color: #c3cfd9; }
 
-#main .shop_pd_info .tab_content .detail_acodion div div { background-color: #fff; padding: 20px 20px; }
+#main .shop_pd_info .tab_content .detail_acodion div h4 a { display: block; background: url("../images/common/icon_ingredientlist_off.png") right 10px center no-repeat; }
+
+#main .shop_pd_info .tab_content .detail_acodion div h4 a.active { background: url("../images/common/icon_ingredientlist_on.png") right 10px center no-repeat; }
+
+#main .shop_pd_info .tab_content .detail_acodion div div { line-height: 25px; background-color: #fff; padding: 20px 20px; }
+
+#main .shop_pd_info .tab_content .review_shop_table { margin-top: 30px; }
+
+#main .shop_pd_info .tab_content .review_shop_table table { width: 100%; border: 1px solid #c3cfd9; }
+
+#main .shop_pd_info .tab_content .review_shop_table table tbody tr { border-bottom: 1px solid #c3cfd9; }
+
+#main .shop_pd_info .tab_content .review_shop_table table tbody tr th { vertical-align: middle; width: 60px; background-color: #fbfafa; }
+
+#main .shop_pd_info .tab_content .review_shop_table table tbody tr td { padding: 10px 10px; font-size: 14px; }
+
+#main .shop_pd_info .tab_content .review_shop_table table tbody tr td .title_date { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+
+#main .shop_pd_info .tab_content .review_shop_table table tbody tr td .title_date .s_r_table { width: 600px; }
+
+#main .shop_pd_info .tab_content .review_shop_table table tbody tr td .title_date .s_r_table li { padding: 5px 0; }
+
+#main .shop_pd_info .tab_content .review_shop_table table tbody tr td .title_date .s_r_table li a { font-size: 16px; color: #676e73; font-weight: 500; }
+
+#main .shop_pd_info .tab_content .review_shop_table table tbody tr td .title_date .shop_r_date_info { padding: 10px 0; line-height: 30px; }
+
+#main .shop_pd_info .tab_content .review_shop_table table tbody .tr_review_expand { display: none; }
+
+#main .shop_pd_info .tab_content .table_bottom_btn { text-align: right; }
+
+#main .shop_pd_info .tab_content .table_bottom_btn button { margin: 20px auto 30px; background-color: #ffcc00; padding: 10px 20px; font-size: 16px; font-weight: 500; color: #fff; }
+
+#main .shop_pd_info .tab_content .order_page { margin: 50px 0 10px; height: 24px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+#main .shop_pd_info .tab_content .order_page a { margin: 0 5px; }
+
+#main .shop_pd_info .tab_content .order_page ol li { display: inline; }
+
+#main .shop_pd_info .tab_content .order_page ol li a { line-height: 24px; }
