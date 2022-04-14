@@ -3,6 +3,15 @@ body {
   border: 1px solid #959ea6;
   margin: 0 auto;
 }
+select {
+  background: url("../images/common/arr-select.png") right 5px center no-repeat;
+  padding-left: 10px;
+  font-size: 16px;
+  outline: none;
+  height: 35px;
+  border: 1px solid #c3cfd9;
+  appearance: none;
+}
 header {
   padding-top: 20px;
   width: 900px;
@@ -71,4 +80,145 @@ header {
   }
 } //header_end
 #main_order {
+  .table_01 {
+    table {
+      margin-top: 20px;
+      border-top: 1px solid #c3cfd9;
+      width: 100%;
+      tbody {
+        tr {
+          th,
+          td {
+            text-align: left;
+            padding: 5px 10px;
+            border-bottom: 1px solid #c3cfd9;
+          }
+          td {
+            input[type="text"] {
+              width: 100%;
+              height: 35px;
+              border: 1px solid #c3cfd9;
+              box-sizing: border-box;
+              padding-left: 10px;
+              font-size: 16px;
+              margin: 5px 0;
+              outline: none;
+            }
+            input[type="number"] {
+              width: 200px;
+              outline: none;
+              box-sizing: border-box;
+              padding-left: 10px;
+              font-size: 16px;
+              margin: 5px 0;
+              height: 35px;
+              border: 1px solid #c3cfd9;
+            }
+            ul {
+              li {
+                button {
+                  display: inline-block;
+                  vertical-align: middle;
+                  box-sizing: border-box;
+                  border: 1px solid #c3cfd9;
+                  height: 35px;
+                  padding: 0 10px;
+                  font-size: 16px;
+                  font-weight: 600;
+                }
+              }
+            }
+            // select {
+            //   background: url("../images/common/arr-select.png") right 5px center no-repeat;
+            //   padding-left: 10px;
+            //   font-size: 16px;
+            //   outline: none;
+            //   height: 35px;
+            //   border: 1px solid #c3cfd9;
+            //   appearance: none;
+            // }
+            input::-webkit-inner-spin-button {
+              -webkit-appearance: none;
+            }
+          }
+          &:nth-child(3) {
+            select {
+              width: 200px;
+              height: 35px;
+              border: 1px solid #c3cfd9;
+            }
+          }
+          &:nth-child(4) {
+            p {
+              font-size: 14px;
+              color: #bbb;
+              line-height: 20px;
+            }
+            input[type="text"] {
+              width: 31.9%;
+            }
+            select {
+              width: 31.9%;
+            }
+            input:read-only {
+              background-color: #dedede;
+            }
+          }
+        }
+      }
+    }
+  } //table_01_end 종료
+  .delivery_Msg {
+    background-color: #f9f9f9;
+    padding: 10px 10px;
+    select {
+      width: 100%;
+      background-color: #fff;
+    }
+    textarea {
+      margin-top: 10px;
+      width: 100%;
+      height: 60px;
+      max-width: 100%;
+      padding: 7px;
+      font-size: 14px;
+      border: 1px solid #d7d5d5;
+      outline: none;
+      box-sizing: border-box;
+      resize: none;
+    }
+    .off {
+      display: none !important;
+    }
+  } // 배송메시지 종료
+  .sp_join_and_not_menber {
+    background: #eff1f4;
+    .simple_join_agree {
+      padding: 10px 10px;
+      display: flex;
+      input {
+        padding: 10px 0;
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+        box-sizing: border-box;
+      }
+      label {
+        cursor: pointer;
+        margin: auto 0;
+        padding-left: 10px;
+        font-size: 16px;
+      }
+    }
+    .sp_join_guide {
+      padding: 0 10px;
+      ul {
+        li {
+          font-size: 14px;
+          color: #bbb;
+          line-height: 24px;
+        }
+      }
+    }
+  }
 }
