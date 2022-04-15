@@ -50,7 +50,7 @@ $(document).ready(function () {
     $(".w_ch").prop("checked", this.checked);
   });
 });
-//배송지 정보로 간편회원가입 클릭 이벤트
-$("#sp_join_check").click(function () {
-  $(".sp_join_guide").removeClass();
-});
+// //배송지 정보로 간편회원가입 클릭 이벤트
+// $("#sp_join_check").click(function () {
+//   $(".sp_join_guide").removeClass();
+// });

@@ -7,7 +7,7 @@
     <title>노엘로힐스</title>
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/order_form.css" />
-    <script src="../js/main.js" defer></script>
+    <!-- <script src="../js/main.js" defer></script> -->
     <script src="../js/jquery-3.6.0.min.js"></script>
   </head>
   <body>
@@ -183,7 +183,7 @@
               </td>
             </tr>
             <tr>
-              <th>비밀번호 확인<span>*</span></th>
+              <th>비밀번호 확인 <span>*</span></th>
               <td>
                 <input type="password" />
                 <span>(영문대소문자/숫자/특수문자 중 2가지 이상 조합, 6자 ~ 16자)</span>
@@ -208,7 +208,7 @@
       </div>
       <!-- 주문상품-->
       <div class="order_product">
-        <div class="o_title_off">
+        <div class="o_title_off" id="o_title">
           <h2>주문상품</h2>
           <span>1개</span>
         </div>
@@ -251,21 +251,174 @@
         </div>
       </div>
       <!--주문상품 종료-->
+      <!--할인 부가결제 시작-->
       <div class="o_discount">
-        <div class="o_title_off">
+        <div class="o_title_off" id="d_title">
           <h2>할인/부가결제</h2>
           <span>-0원</span>
         </div>
         <div class="apply_discount">
-          <strong>할인코드 적용</strong>
-          <div class="control">
-            <input type="text" />
-            <a href="">적용</a>
+          <div class="dis_inner">
+            <strong>할인코드 적용</strong>
+            <div class="control_d">
+              <input type="text" />
+              <a href="">적용</a>
+            </div>
+          </div>
+          <div class="total_pay">
+            <h3>적용 금액</h3>
+            <strong>
+              <span>-0원</span>
+            </strong>
           </div>
         </div>
       </div>
+      <!--할인 부가결제 종료-->
+      <!--결제정보 시작-->
+      <div class="pay_info">
+        <div class="o_title_off" id="pi_title">
+          <h2>결제정보</h2>
+        </div>
+        <div class="control_pi">
+          <div class="table_pi">
+            <table>
+              <colgroup>
+                <col style="width: 140px" />
+                <col style="width: auto" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th scope="col">주문상품</th>
+                  <td><span>32,000원</span></td>
+                </tr>
+                <tr>
+                  <th scope="col">할인/부가결제</th>
+                  <td><span>-0원</span></td>
+                </tr>
+                <tr>
+                  <th scope="col">배송비</th>
+                  <td><span>3,000원</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="total_pay_info">
+            <h3>결제 금액</h3>
+            <strong>
+              <span>35,000원</span>
+            </strong>
+          </div>
+        </div>
+      </div>
+      <!-- 결제 정보 종료-->
+      <!-- 결제 수단 시작-->
+      <div class="method_pay">
+        <div class="o_title_off" id="mp_title">
+          <h2>결제수단</h2>
+        </div>
+        <div class="contents_mp">
+          <div class="segment_mp">
+            <div class="ti_mp">
+              <span>결제수단 선택</span>
+            </div>
+            <div class="inner_method">
+              <span class="ec-base-label"
+                ><input id="addr_paymethod0" name="addr_paymethod" fw-filter="isFill" fw-label="결제방식" fw-msg="" value="cash" type="radio" checked="checked" /><label for="addr_paymethod0"
+                  >무통장입금</label
+                >
+              </span>
+              <span class="ec-base-label"
+                ><input id="addr_paymethod1" name="addr_paymethod" fw-filter="isFill" fw-label="결제방식" fw-msg="" value="card" type="radio" /><label for="addr_paymethod1">신용카드</label>
+              </span>
+              <span class="ec-base-label"
+                ><input id="addr_paymethod2" name="addr_paymethod" fw-filter="isFill" fw-label="결제방식" fw-msg="" value="cell" type="radio" /><label for="addr_paymethod2">휴대폰</label>
+              </span>
+              <!-- <span class="ec-base-label"
+                ><input id="addr_paymethod3" name="addr_paymethod" fw-filter="isFill" fw-label="결제방식" fw-msg="" value="icash" type="radio" /><label for="addr_paymethod3"
+                  >에스크로(가상계좌)</label
+                ></span
+              >
+              <span class="ec-base-label"
+                ><input id="addr_paymethod4" name="addr_paymethod" fw-filter="isFill" fw-label="결제방식" fw-msg="" value="tcash" type="radio" /><label for="addr_paymethod4"
+                  >에스크로(계좌이체)</label
+                ></span
+              > -->
+            </div>
+          </div>
+          <!--무통장입금-->
+          <div class="p_method01">
+            <div class="table_md_p">
+              <table>
+                <colgroup>
+                  <col style="width: 140px" />
+                  <col style="width: auto" />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th scope="col">입금은행<span>*</span></th>
+                    <td>
+                      <select id="bankaccount" name="bankaccount" fw-filter="" fw-label="무통장 입금은행" fw-msg="">
+                        <option value="-1">::: 선택해 주세요. :::</option>
+                        <option value="bank_26:140-013-319568:(주)세손:신한은행:www.shinhan.com">신한은행:140-013-319568 (주)세손</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="col">입금자명<span>*</span></th>
+                    <td>
+                      <input id="pname" name="pname" fw-filter="" fw-label="무통장 입금자명" fw-msg="" class="inputTypeText" placeholder="" size="15" maxlength="20" value="" type="text" />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="receiptArea">
+              <div class="h_title">
+                <h3>현금영수증</h3>
+              </div>
+              <input id="cashreceipt_regist0" name="cashreceipt_regist" fw-filter="" fw-label="현금영수증 신청 여부" fw-msg="" value="1" type="radio" />
+              <label for="cashreceipt_regist0">현금영수증 신청</label>
+              <input id="cashreceipt_regist1" name="cashreceipt_regist" fw-filter="" fw-label="현금영수증 신청 여부" fw-msg="" value="99" type="radio" checked="checked" />
+              <label for="cashreceipt_regist1">신청안함</label>
+            </div>
+          </div>
+          <!-- 무통장입금 종료-->
+          <div class="p_method02">
+            <div class="cp_msg">
+              <p>- 소액 결제의 경우 PG사 정책에 따라 결제 금액 제한이 있을 수 있습니다.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 결제수단 종료-->
+      <!--모든 약관 동의-->
+      <div class="footer_agree">
+        <div class="agree">
+          <input type="checkbox" id="allAgree_ft" /><label for="allAgree"><strong>모든 약관 동의</strong></label>
+        </div>
+        <div class="agree"><input type="checkbox" class="f_ag" id="mallAgree" /><label for="mallAgree">[필수] 쇼핑몰 이용약관 동의</label><button class="btn_ag"></button></div>
+        <div class="agree"><input type="checkbox" id="mallAgree" class="f_ag" /><label for="mallAgree">[필수] 개인정보 수집 및 이용 동의</label><button class="btn_ag"></button></div>
+        <div class="agree">
+          <input type="checkbox" id="etc_subparam_is_news_mail" class="f_ag" /><label for="etc_subparam_is_news_mail">[필수] 배송정보 제공방침 동의</label><button class="btn_ag"></button>
+        </div>
+      </div>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="order_footer">
+        <div class="order_payment">
+          <button><span>35,000</span>원 결제하기</button>
+        </div>
+        <div class="list_f_msg">
+          <ul>
+            <li>
+              무이자할부가 적용되지 않은 상품과 무이자할부가 가능한 상품을 동시에 구매할 경우 전체 주문 상품 금액에 대해 무이자할부가 적용되지 않습니다. 무이자할부를 원하시는 경우 장바구니에서
+              무이자할부 상품만 선택하여 주문하여 주시기 바랍니다.
+            </li>
+            <li>최소 결제 가능 금액은 결제금액에서 배송비를 제외한 금액입니다.</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
   <script>
     function selectEmail(ele) {
@@ -315,7 +468,7 @@
     });
     //주문상품 클릭시
     $(document).ready(function () {
-      $(".o_title_off").click(function () {
+      $("#o_title").click(function () {
         if ($(".pd_content").css("display") == "none") {
           $(".pd_content").css("display", "block");
         } else {
@@ -325,16 +478,43 @@
       $(".pr_title").click(function () {
         if ($(".to_pr_contents").css("display") == "none") {
           $(".to_pr_contents").css("display", "block");
+          $(".pr_title:after").css("background", "red");
         } else {
           $(".to_pr_contents").css("display", "none");
         }
       });
+      //transform: rotate(180deg);
+      $("#d_title").click(function () {
+        if ($(".apply_discount").css("display") == "none") {
+          $(".apply_discount").css("display", "block");
+        } else {
+          $(".apply_discount").css("display", "none");
+        }
+      });
+      $("#pi_title").click(function () {
+        if ($(".control_pi").css("display") == "none") {
+          $(".control_pi").css("display", "block");
+        } else {
+          $(".control_pi").css("display", "none");
+        }
+      });
+      $("#mp_title").click(function () {
+        if ($(".contents_mp").css("display") == "none") {
+          $(".contents_mp").css("display", "block");
+        } else {
+          $(".contents_mp").css("display", "none");
+        }
+      });
+      // 라디오 체크 이벤트
+      $("input[type=radio][name=addr_paymethod]").change(function () {
+        if (this.value == "cash") {
+          $(".p_method01").css("display", "block");
+          $(".p_method02").css("display", "none");
+        } else {
+          $(".p_method01").css("display", "none");
+          $(".p_method02").css("display", "block");
+        }
+      });
     });
-
-    // if ($("div").css("display") == "none") {
-    //   $("div").show(); //display :none 일떄
-    // } else {
-    //   $("div").hide(); //display :block 일떄
-    // }
   </script>
 </html>
