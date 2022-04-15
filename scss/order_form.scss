@@ -12,6 +12,91 @@ select {
   border: 1px solid #c3cfd9;
   appearance: none;
 }
+input[type="text"] {
+  width: 100%;
+  height: 35px;
+  border: 1px solid #c3cfd9;
+  box-sizing: border-box;
+  padding-left: 10px;
+  font-size: 16px;
+  margin: 5px 0;
+  outline: none;
+  // vertical-align: middle;
+}
+input[type="number"] {
+  width: 200px;
+  height: 35px;
+  border: 1px solid #c3cfd9;
+  box-sizing: border-box;
+  padding-left: 10px;
+  font-size: 16px;
+  margin: 5px 0;
+  outline: none;
+}
+input[type="password"] {
+  width: 100%;
+  height: 35px;
+  border: 1px solid #c3cfd9;
+  box-sizing: border-box;
+  padding-left: 10px;
+  font-size: 16px;
+  margin: 5px 0;
+  outline: none;
+}
+.o_title_off {
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #c3cfd9;
+  position: relative;
+  padding-right: 40px;
+  cursor: pointer;
+  h2 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+  }
+  span {
+    text-align: right;
+    color: #508bed;
+  }
+  &::after {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: url("../images/common/icon_ingredientlist_off.png") right 5px center no-repeat;
+  }
+}
+.o_title_on {
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding-right: 40px;
+  h2 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+  }
+  span {
+    text-align: right;
+    color: #508bed;
+  }
+  &::after {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: url("../images/common/icon_ingredientlist_on.png") right 5px center no-repeat;
+  }
+}
 header {
   padding-top: 20px;
   width: 900px;
@@ -94,49 +179,21 @@ header {
             border-bottom: 1px solid #c3cfd9;
           }
           td {
-            input[type="text"] {
-              width: 100%;
-              height: 35px;
-              border: 1px solid #c3cfd9;
-              box-sizing: border-box;
-              padding-left: 10px;
-              font-size: 16px;
-              margin: 5px 0;
-              outline: none;
-            }
-            input[type="number"] {
-              width: 200px;
-              outline: none;
-              box-sizing: border-box;
-              padding-left: 10px;
-              font-size: 16px;
-              margin: 5px 0;
-              height: 35px;
-              border: 1px solid #c3cfd9;
-            }
             ul {
-              li {
+              .add_info_li {
+                display: flex;
                 button {
-                  display: inline-block;
-                  vertical-align: middle;
-                  box-sizing: border-box;
-                  border: 1px solid #c3cfd9;
+                  width: 100px;
                   height: 35px;
-                  padding: 0 10px;
+                  border: 1px solid #c3cfd9;
+                  box-sizing: border-box;
                   font-size: 16px;
-                  font-weight: 600;
+                  margin: 5px 10px;
+                  outline: none;
+                  cursor: pointer;
                 }
               }
             }
-            // select {
-            //   background: url("../images/common/arr-select.png") right 5px center no-repeat;
-            //   padding-left: 10px;
-            //   font-size: 16px;
-            //   outline: none;
-            //   height: 35px;
-            //   border: 1px solid #c3cfd9;
-            //   appearance: none;
-            // }
             input::-webkit-inner-spin-button {
               -webkit-appearance: none;
             }
@@ -155,10 +212,10 @@ header {
               line-height: 20px;
             }
             input[type="text"] {
-              width: 31.9%;
+              width: 31.5%;
             }
             select {
-              width: 31.9%;
+              width: 31.5%;
             }
             input:read-only {
               background-color: #dedede;
@@ -191,6 +248,7 @@ header {
       display: none !important;
     }
   } // 배송메시지 종료
+  //간편 회원가입 유도
   .sp_join_and_not_menber {
     background: #eff1f4;
     .simple_join_agree {
@@ -220,5 +278,154 @@ header {
         }
       }
     }
+  }
+  .not_m_pw {
+    .title {
+      padding: 20px 10px;
+      border-bottom: 1px solid #c3cfd9;
+      h2 {
+        font: size 16px;
+        font-weight: 600;
+      }
+    }
+    .contents {
+      table {
+        width: 100%;
+        tbody {
+          tr {
+            th,
+            td {
+              text-align: left;
+              padding: 5px 10px;
+            }
+            td {
+              span {
+                font-size: 14px;
+                color: #bbb;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .delivery_info_join {
+    display: none;
+    table {
+      width: 100%;
+      tbody {
+        tr {
+          th,
+          td {
+            text-align: left;
+            padding: 5px 10px;
+          }
+          &:nth-child(4) {
+            padding: 10px 0;
+            .agreeLabel {
+              display: flex;
+              input[type="checkbox"] {
+                padding: 10px 0;
+                width: 24px;
+                height: 24px;
+                cursor: pointer;
+                box-sizing: border-box;
+              }
+              label {
+                cursor: pointer;
+                margin: auto 0;
+                padding-left: 10px;
+                line-height: 24px;
+                font-size: 16px;
+                margin: auto 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    // .join_agree {}
+  } //end
+  .order_product {
+    margin-top: 20px;
+    border-top: 1px solid #c3cfd9;
+    border-bottom: 1px solid #c3cfd9;
+    //o_title_off 의 경우 공통으로 사용
+    .pd_content {
+      display: none;
+      .orderArea {
+        padding: 20px 10px;
+        position: relative;
+        .thumnail {
+          display: inline-block;
+          a {
+            img {
+              width: 100px;
+              height: 100px;
+            }
+          }
+        }
+        .description {
+          vertical-align: top;
+          display: inline-block;
+          margin-left: 25px;
+          strong {
+            a {
+              font-size: 16px;
+            }
+          }
+          ul {
+            margin-top: 10px;
+            li {
+              font-size: 14px;
+              line-height: 20px;
+            }
+          }
+        }
+        .btnRemove {
+          position: absolute;
+          right: 20px;
+          vertical-align: middle;
+          align-items: center;
+        }
+      }
+      .total_price {
+        margin-top: 30px;
+        padding: 0 10px;
+        .pr_title {
+          cursor: pointer;
+          background-color: #c3cfd9;
+          padding: 20px 10px;
+          position: relative;
+          &::after {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 10px;
+            content: "";
+            width: 20px;
+            height: 20px;
+            background: url("../images/common/icon_ingredientlist_off.png") right 5px center no-repeat;
+          }
+        }
+        .to_pr_contents {
+          display: none;
+          ul {
+            li {
+              padding: 15px 10px;
+              .t_p_c_li {
+                display: flex;
+                justify-content: space-between;
+              }
+            }
+          }
+        }
+      }
+    }
+  } // 주문상품 완료
+  .o_discount {
+    margin-top: 20px;
+    border-top: 1px solid #c3cfd9;
+    border-bottom: 1px solid #c3cfd9;
   }
 }

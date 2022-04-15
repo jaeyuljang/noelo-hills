@@ -30,7 +30,7 @@
       <div class="table_01">
         <table>
           <colgroup>
-            <col style="width: 120px" />
+            <col style="width: 140px" />
             <col style="width: auto" />
           </colgroup>
           <tbody>
@@ -44,8 +44,9 @@
               <th>주소 <span>*</span></th>
               <td>
                 <ul>
-                  <li>
+                  <li class="add_info_li">
                     <input type="number" placeholder="우편번호" readonly />
+                    <label for=""></label>
                     <button>주소검색</button>
                   </li>
                   <li>
@@ -118,6 +119,7 @@
         </div>
       </div>
       <!-- 배송메시지 입력 종료 -->
+      <!-- 간편회원가입 -->
       <div class="sp_join_and_not_menber">
         <div class="simple_join_agree">
           <input type="checkBox" id="sp_join_check" />
@@ -128,6 +130,138 @@
             <li>아이디, 비밀번호 입력만으로 간편하게 회원가입이 가능합니다.</li>
             <li>회원가입 후 쿠폰, 이벤트 등 할인혜택을 받으실 수 있습니다.</li>
           </ul>
+        </div>
+      </div>
+      <!-- 비회원 주문 조회 비밀번호-->
+      <div class="not_m_pw">
+        <div class="title">
+          <h2>비회원 주문조회 비밀번호</h2>
+        </div>
+        <div class="contents">
+          <table>
+            <colgroup>
+              <col style="width: 140px" />
+              <col style="width: auto" />
+            </colgroup>
+            <tbody>
+              <tr>
+                <th>비밀번호</th>
+                <td>
+                  <input type="password" />
+                  <span>(영문대소문자/숫자/특수문자 중 2가지 이상 조합, 6자 ~ 16자)</span>
+                </td>
+              </tr>
+              <tr>
+                <th>비밀번호 확인</th>
+                <td>
+                  <input type="password" />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- 배송지 정보로 간편 회원가입-->
+      <div class="delivery_info_join">
+        <table>
+          <colgroup>
+            <col style="width: 140px" />
+            <col style="width: auto" />
+          </colgroup>
+          <tbody>
+            <tr>
+              <th>아이디 <span>*</span></th>
+              <td>
+                <input type="text" />
+              </td>
+            </tr>
+            <tr>
+              <th>비밀번호 <span>*</span></th>
+              <td>
+                <input type="password" />
+                <span>(영문대소문자/숫자/특수문자 중 2가지 이상 조합, 6자 ~ 16자)</span>
+              </td>
+            </tr>
+            <tr>
+              <th>비밀번호 확인<span>*</span></th>
+              <td>
+                <input type="password" />
+                <span>(영문대소문자/숫자/특수문자 중 2가지 이상 조합, 6자 ~ 16자)</span>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <div class="agreeLabel">
+                  <input type="checkbox" id="eSimpleJoinAgreeAll" class="check_all" /><label for="eSimpleJoinAgreeAll"><strong>모든 정보에 동의하기</strong></label>
+                </div>
+                <div class="agreeLabel">
+                  <input type="checkbox" class="j_ch" id="simple_join_agree_use_info" /><label for="simple_join_agree_use_info"
+                    >위 정보와 배송정보(이름, 주소, 이메일, 전화번호)를 회원정보 사용에 동의(필수)</label
+                  >
+                </div>
+                <div class="agreeLabel"><input type="checkbox" id="etc_subparam_is_sms" class="j_ch" /><label for="etc_subparam_is_sms">SMS로 쇼핑정보 수신 동의(선택)</label></div>
+                <div class="agreeLabel"><input type="checkbox" id="etc_subparam_is_news_mail" class="j_ch" /><label for="etc_subparam_is_news_mail">이메일로 쇼핑정보 수신 동의(선택)</label></div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- 주문상품-->
+      <div class="order_product">
+        <div class="o_title_off">
+          <h2>주문상품</h2>
+          <span>1개</span>
+        </div>
+        <div class="pd_content">
+          <div class="orderArea">
+            <div class="thumnail">
+              <a href=""><img src="../images/shop_main/moisture/moi_01.jpg" alt="" /></a>
+            </div>
+            <div class="description">
+              <strong><a href="">모이스처 라이징 로션 200ml</a></strong>
+              <ul>
+                <li>수량: 1개</li>
+                <li>상품구매금액</li>
+                <li>[조건]/기본배송</li>
+              </ul>
+            </div>
+            <button class="btnRemove">삭제</button>
+          </div>
+          <div class="total_price">
+            <div class="pr_title">
+              <h3>[기본배송]</h3>
+            </div>
+            <div class="to_pr_contents">
+              <ul>
+                <li>
+                  <div class="t_p_c_li">
+                    <span>상품 구매 금액</span>
+                    <span>+32,000원</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="t_p_c_li">
+                    <span>배송비</span>
+                    <span>+3,000원</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--주문상품 종료-->
+      <div class="o_discount">
+        <div class="o_title_off">
+          <h2>할인/부가결제</h2>
+          <span>-0원</span>
+        </div>
+        <div class="apply_discount">
+          <strong>할인코드 적용</strong>
+          <div class="control">
+            <input type="text" />
+            <a href="">적용</a>
+          </div>
         </div>
       </div>
     </main>
@@ -159,5 +293,48 @@
         }
       });
     });
+    //배송지 정보로 간편회원가입 클릭 이벤트
+    $(document).ready(function () {
+      $("#sp_join_check").change(function () {
+        if ($("#sp_join_check").is(":checked")) {
+          $(".sp_join_guide").css("display", "none");
+          $(".not_m_pw").css("display", "none");
+          $(".delivery_info_join").css("display", "block");
+        } else {
+          $(".sp_join_guide").css("display", "block");
+          $(".not_m_pw").css("display", "block");
+          $(".delivery_info_join").css("display", "none");
+        }
+      });
+    });
+    //간편회원 가입시 동의 하기부분
+    $(document).ready(function () {
+      $("#eSimpleJoinAgreeAll").click(function () {
+        $(".j_ch").prop("checked", this.checked);
+      });
+    });
+    //주문상품 클릭시
+    $(document).ready(function () {
+      $(".o_title_off").click(function () {
+        if ($(".pd_content").css("display") == "none") {
+          $(".pd_content").css("display", "block");
+        } else {
+          $(".pd_content").css("display", "none");
+        }
+      });
+      $(".pr_title").click(function () {
+        if ($(".to_pr_contents").css("display") == "none") {
+          $(".to_pr_contents").css("display", "block");
+        } else {
+          $(".to_pr_contents").css("display", "none");
+        }
+      });
+    });
+
+    // if ($("div").css("display") == "none") {
+    //   $("div").show(); //display :none 일떄
+    // } else {
+    //   $("div").hide(); //display :block 일떄
+    // }
   </script>
 </html>
