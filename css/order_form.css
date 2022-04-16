@@ -30,7 +30,9 @@ header .header_top .hLeft a { margin-left: 20px; display: block; width: 30px; he
 
 header .header_top .hRight { position: relative; }
 
-header .header_top .hRight a { margin-right: 10px; display: block; width: 30px; height: 30px; background-image: url("../images/order_form/sfix_header.png"); background-repeat: no-repeat; background-position: center; background-size: cover; position: absolute; top: 50%; right: 35px; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+header .header_top .hRight a { margin-right: 10px; display: block; width: 35px; height: 35px; background-image: url("../images/order_form/sfix_header.png"); background-repeat: no-repeat; background-position: center; background-size: cover; position: absolute; top: 50%; right: 35px; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+
+header .header_top .hRight a span { overflow: hidden; position: absolute; right: 0; top: 2px; min-width: 10px; padding: 0 2px; height: 14px; border-radius: 14px; font-weight: bold; font-size: 9px; line-height: 13px; color: #fff; text-align: center; background: #ff0000; }
 
 header .header_top .hRight a:nth-child(2) { background-position: right; right: 0; }
 
@@ -38,9 +40,11 @@ header .header_bottom { overflow: hidden; margin-top: 10px; line-height: 50px; c
 
 #main_order { background: #e3e4e7; margin-top: 150px; }
 
+#main_order .deliver_location { margin-top: 20px; padding: 20px 10px; font-size: 16px; }
+
 #main_order .table_01 { background: #fff; }
 
-#main_order .table_01 table { margin-top: 20px; border-top: 1px solid #c3cfd9; width: 100%; }
+#main_order .table_01 table { border-top: 1px solid #c3cfd9; width: 100%; }
 
 #main_order .table_01 table tbody tr th, #main_order .table_01 table tbody tr td { text-align: left; padding: 5px 10px; border-bottom: 1px solid #c3cfd9; }
 
@@ -153,6 +157,16 @@ header .header_bottom { overflow: hidden; margin-top: 10px; line-height: 50px; c
 #main_order .o_discount .apply_discount .dis_inner .control_d input { width: 790px; }
 
 #main_order .o_discount .apply_discount .dis_inner .control_d a { text-align: center; margin: 5px 0; display: block; text-decoration: none; -webkit-box-sizing: border-box; box-sizing: border-box; width: 80px; height: 35px; border: 1px solid #c3cfd9; line-height: 30px; }
+
+#main_order .o_discount .apply_discount .dis_inner_cupon_select { padding: 20px 10px; border-top: 1px solid #c3cfd9; text-align: right; }
+
+#main_order .o_discount .apply_discount .dis_inner_cupon_select strong { float: left; font-size: 16px; }
+
+#main_order .o_discount .apply_discount .dis_inner_cupon_select .control_dc { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+#main_order .o_discount .apply_discount .dis_inner_cupon_select .control_dc span { color: #508bed; }
+
+#main_order .o_discount .apply_discount .dis_inner_cupon_select .control_dc a { text-align: center; margin: 5px 0; display: block; text-decoration: none; -webkit-box-sizing: border-box; box-sizing: border-box; width: 80px; height: 35px; border: 1px solid #c3cfd9; line-height: 30px; }
 
 #main_order .o_discount .apply_discount .total_pay { border-top: 1px solid #c3cfd9; padding: 20px 10px; background-color: #eff1f4; display: -webkit-box; display: -ms-flexbox; display: flex; vertical-align: middle; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; font-size: 16px; }
 

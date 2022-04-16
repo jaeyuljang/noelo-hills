@@ -29,6 +29,12 @@
       <div class="header_bottom">주문/결제</div>
     </header>
     <main id="main_order">
+      <div class="deliver_location">
+        <input id="sameaddr0" name="sameaddr" fw-filter="" fw-label="1" fw-msg="" value="M" type="radio" />
+        <label for="sameaddr0">회원 정보와 동일</label>
+        <input id="sameaddr1" name="sameaddr" fw-filter="" fw-label="1" fw-msg="" value="F" type="radio" />
+        <label for="sameaddr1">새로운 배송지</label>
+      </div>
       <div class="table_01">
         <table>
           <colgroup>
@@ -267,6 +273,14 @@
               <a href="">적용</a>
             </div>
           </div>
+          <div class="dis_inner_cupon_select">
+            <strong>쿠폰 할인</strong>
+            <span>(보유쿠폰 <span>5개</span>)</span>
+            <div class="control_dc">
+              <span><span>0</span>원</span>
+              <a href="">쿠폰 적용</a>
+            </div>
+          </div>
           <div class="total_pay">
             <h3>적용 금액</h3>
             <strong>
@@ -398,8 +412,7 @@
         <div class="agree">
           <input type="checkbox" id="allAgree_ft" /><label for="allAgree"><strong>모든 약관 동의</strong></label>
         </div>
-        <div class="agree"><input type="checkbox" class="f_ag" id="mallAgree" /><label for="mallAgree">[필수] 쇼핑몰 이용약관 동의</label><button class="btn_ag"></button></div>
-        <div class="agree"><input type="checkbox" id="mallAgree" class="f_ag" /><label for="mallAgree">[필수] 개인정보 수집 및 이용 동의</label><button class="btn_ag"></button></div>
+        <div class="agree"><input type="checkbox" class="f_ag" id="mallAgree" /><label for="mallAgree">[필수] 구매조건 확인 및 결제진행 동의</label><button class="btn_ag"></button></div>
         <div class="agree">
           <input type="checkbox" id="etc_subparam_is_news_mail" class="f_ag" /><label for="etc_subparam_is_news_mail">[필수] 배송정보 제공방침 동의</label><button class="btn_ag"></button>
         </div>

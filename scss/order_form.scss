@@ -111,8 +111,8 @@ header {
       a {
         margin-right: 10px;
         display: block;
-        width: 30px;
-        height: 30px;
+        width: 35px;
+        height: 35px;
         background-image: url("../images/order_form/sfix_header.png");
         background-repeat: no-repeat;
         background-position: center;
@@ -121,6 +121,22 @@ header {
         top: 50%;
         right: 35px;
         transform: translateY(-50%);
+        span {
+          overflow: hidden;
+          position: absolute;
+          right: 0;
+          top: 2px;
+          min-width: 10px;
+          padding: 0 2px;
+          height: 14px;
+          border-radius: 14px;
+          font-weight: bold;
+          font-size: 9px;
+          line-height: 13px;
+          color: #fff;
+          text-align: center;
+          background: #ff0000;
+        }
         &:nth-child(2) {
           background-position: right;
           right: 0;
@@ -143,10 +159,14 @@ header {
 #main_order {
   background: #e3e4e7;
   margin-top: 150px;
+  .deliver_location {
+    margin-top: 20px;
+    padding: 20px 10px;
+    font-size: 16px;
+  }
   .table_01 {
     background: #fff;
     table {
-      margin-top: 20px;
       border-top: 1px solid #c3cfd9;
       width: 100%;
       tbody {
@@ -428,6 +448,35 @@ header {
           justify-content: space-between;
           input {
             width: 790px;
+          }
+          a {
+            text-align: center;
+            margin: 5px 0;
+            display: block;
+            text-decoration: none;
+            box-sizing: border-box;
+            width: 80px;
+            height: 35px;
+            border: 1px solid #c3cfd9;
+            line-height: 30px;
+          }
+        }
+      }
+      //로그인시 나오는 추가화면
+      .dis_inner_cupon_select {
+        padding: 20px 10px;
+        border-top: 1px solid #c3cfd9;
+        text-align: right;
+        strong {
+          float: left;
+          font-size: 16px;
+        }
+        .control_dc {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          span {
+            color: #508bed;
           }
           a {
             text-align: center;
