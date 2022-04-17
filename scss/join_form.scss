@@ -3,7 +3,8 @@ body {
 }
 #joinSection,
 #LoginSection,
-#updateSection {
+#updateSection,
+#findSection {
   table {
     tr {
       border-top: 1px solid #959ea6;
@@ -187,8 +188,11 @@ body {
   }
 }
 
-#LoginSection {
-  margin-top: 100px;
+//로그인 섹션 과 아이디 찾기 섹션 에 마진탑 적용
+#LoginSection,
+#findSection {
+  margin-top: 100px !important;
+  margin-bottom: 100px !important;
 }
 //비회원 주문조회 css
 #no_login_form {
@@ -232,12 +236,15 @@ body {
     }
   }
 }
+//로그인 폼
 #login_form {
   margin: 50px 0;
   .field_02 {
     fieldset {
       .login {
-        input {
+        input[type="text"],
+        input[type="password"] {
+          padding: 0;
           margin-top: 20px;
         }
       }
@@ -280,6 +287,9 @@ body {
           margin: 25px 0 0 0;
           justify-content: center;
           li {
+            a {
+              text-decoration: none;
+            }
             padding-right: 15px;
             &:nth-child(2) {
               padding-left: 15px;
@@ -365,7 +375,6 @@ body {
           }
         }
       }
-
       .puchase_nomember {
         width: 100%;
         margin-top: 20px;
@@ -379,6 +388,107 @@ body {
           font-size: 18px;
         }
       }
+      .no_m_puch {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+
+        a {
+          text-align: center;
+          width: 250px;
+          height: 50px;
+          line-height: 50px;
+          display: block;
+          background: #ffcc00;
+          font-size: 18px;
+          color: #fff;
+        }
+      }
     }
   }
+}
+
+//아이디 비미번호 찾기 css
+#findSection {
+  overflow: hidden;
+  width: 500px;
+  margin: 0 auto;
+  margin-bottom: 500px;
+
+  #find_form {
+    .field_03 {
+      margin-top: 40px;
+      fieldset {
+        width: 500px;
+        .id_find_checkBox {
+          width: 100%;
+          height: 25px;
+          input[type="radio"] {
+            appearance: none;
+          }
+          label {
+            padding-left: 30px;
+            box-sizing: border-box;
+            font-size: 18px;
+            height: 35px;
+            background: url("../images/Login/bg-radio.png") left center no-repeat;
+          }
+          :checked + label {
+            background-image: url("../images/Login/bg-radio-active.png");
+          }
+        }
+        input[type="text"] {
+          width: 500px;
+          padding: 5px 0;
+          margin: 15px 0;
+        }
+
+        .input_e_form {
+          margin: 30px 0;
+        }
+        .input_p_form {
+          display: none;
+          margin: 30px 0;
+          p {
+            margin-top: 20px;
+          }
+          input[type="number"] {
+            margin: 15px 0 15px;
+            width: 29%;
+          }
+        }
+        .input_pi_form {
+          overflow: hidden;
+          display: none;
+          margin: 30px 0;
+          .text_pimg {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            p {
+              font-size: 12px;
+              text-overflow: hidden;
+              line-height: 20px;
+              margin-top: 5px;
+            }
+            a {
+              display: block;
+            }
+          }
+        }
+        .login_btn {
+          width: 100%;
+          cursor: pointer;
+          padding: 15px 0;
+          background: #ffcc00;
+          font-size: 20px;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+//text [number] 에서 화살표 제거
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }

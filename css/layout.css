@@ -26,15 +26,15 @@ img { vertical-align: top; }
 
 #header .container #gnb .list > li > a { font-size: 14px; text-transform: capitalize; font-weight: 700; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; height: 70px; padding: 0 50px; }
 
-#header .container #gnb .list > li:hover > a { background-color: #e6e230; }
+#header .container #gnb .list > li:hover > a { background-color: #ffcc00; }
 
 #header .container #gnb .list > li:hover .depth02 { display: block; }
 
-#header .container #gnb .list > li .depth02 { background-color: #e6e230; padding: 5px 10px; border-radius: 0 0 15px 15px; display: none; }
+#header .container #gnb .list > li .depth02 { background-color: #ffcc00; padding: 5px 10px; border-radius: 0 0 15px 15px; display: none; }
 
 #header .container #gnb .list > li .depth02 li a { display: block; padding: 10px 0; }
 
-#header .container #gnb .list > li .depth02 li a:hover { background-color: #cbc718; border-radius: 5px; -webkit-box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1); box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1); }
+#header .container #gnb .list > li .depth02 li a:hover { background-color: #cca300; border-radius: 5px; -webkit-box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1); box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1); }
 
 #header .container .myWrap { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; margin-top: 25px; }
 
