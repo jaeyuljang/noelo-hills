@@ -52,7 +52,7 @@
 
 #main .inner .soon h3 span { display: block; height: 30px; line-height: 30px; font-size: 20px; }
 
-#main .shop_pd_info { padding: 70px 0; width: 900px; margin: 0 auto; border: 1px solid #c3cfd9; }
+#main .shop_pd_info { padding: 70px 0; width: 1200px; margin: 0 auto; border: 1px solid #c3cfd9; }
 
 #main .shop_pd_info .top_pd_menu01 { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
