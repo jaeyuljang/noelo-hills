@@ -64,12 +64,6 @@
 
 #main .wishlist .consult_list_table .wish_bottom_btn .gCenter a:nth-child(2) { background-color: #ffcc00; color: #fff; }
 
-#main .wishlist .consult_list_table .order_page { margin-top: 40px; margin-bottom: 80px; height: 24px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
-
-#main .wishlist .consult_list_table .order_page a { margin: 0 5px; }
-
-#main .wishlist .consult_list_table .order_page ol li a { line-height: 24px; }
-
 #main .saved_money { width: 1480px; margin: 0 auto; }
 
 #main .saved_money .save_m_Info { width: 100%; border: 1px solid #c3cfd9; padding: 20px 0; text-align: center; position: relative; }
@@ -114,12 +108,6 @@
 
 #main .saved_money .s_money_list_table table tbody tr td { padding: 15px 0; vertical-align: middle; }
 
-#main .saved_money .order_page { margin: 100px 0; height: 24px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
-
-#main .saved_money .order_page a { margin: 0 5px; }
-
-#main .saved_money .order_page ol li a { line-height: 24px; }
-
 #main .saved_money .myshop-head { margin-bottom: 50px; }
 
 #main .saved_money .myshop-head h3 { font-size: 18px; color: #676e73; font-weight: 500; }
@@ -147,12 +135,6 @@
 #main .myCupon .myshop-cuponlist .cupon_list_table table tbody tr { border-bottom: 1px solid #959ea6; }
 
 #main .myCupon .myshop-cuponlist .cupon_list_table table tbody tr td { text-align: center; vertical-align: middle; padding: 15px 0; font-size: 14px; font-weight: 500; color: #676e73; }
-
-#main .myCupon .order_page { margin: 50px 0 10px; height: 24px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
-
-#main .myCupon .order_page a { margin: 0 5px; }
-
-#main .myCupon .order_page ol li a { line-height: 24px; }
 
 #main .myCupon .myshop_cupon_serial .c_title { margin: 20px 0; }
 

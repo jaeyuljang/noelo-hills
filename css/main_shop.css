@@ -171,11 +171,3 @@
 #main .shop_pd_info .tab_content .table_bottom_btn { text-align: right; }
 
 #main .shop_pd_info .tab_content .table_bottom_btn button { margin: 20px auto 30px; background-color: #ffcc00; padding: 10px 20px; font-size: 16px; font-weight: 500; color: #fff; }
-
-#main .shop_pd_info .tab_content .order_page { margin: 50px 0 10px; height: 24px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
-
-#main .shop_pd_info .tab_content .order_page a { margin: 0 5px; }
-
-#main .shop_pd_info .tab_content .order_page ol li { display: inline; }
-
-#main .shop_pd_info .tab_content .order_page ol li a { line-height: 24px; }

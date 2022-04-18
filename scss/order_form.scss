@@ -1,81 +1,86 @@
-body {
+//비회원 주문 공통 부분은 scss 맨위에다 기재함
+#main_order {
   width: 900px;
   border: 1px solid #959ea6;
   margin: 0 auto;
-}
-select {
-  background: url("../images/common/arr-select.png") right 5px center no-repeat;
-  padding-left: 10px;
-  font-size: 16px;
-  outline: none;
-  height: 35px;
-  border: 1px solid #c3cfd9;
-  appearance: none;
-}
-input[type="text"] {
-  width: 100%;
-  height: 35px;
-  border: 1px solid #c3cfd9;
-  box-sizing: border-box;
-  padding-left: 10px;
-  font-size: 16px;
-  margin: 5px 0;
-  outline: none;
-  // vertical-align: middle;
-}
-input[type="number"] {
-  width: 200px;
-  height: 35px;
-  border: 1px solid #c3cfd9;
-  box-sizing: border-box;
-  padding-left: 10px;
-  font-size: 16px;
-  margin: 5px 0;
-  outline: none;
-}
-input[type="password"] {
-  width: 100%;
-  height: 35px;
-  border: 1px solid #c3cfd9;
-  box-sizing: border-box;
-  padding-left: 10px;
-  font-size: 16px;
-  margin: 5px 0;
-  outline: none;
-}
-.o_title_off {
-  padding: 20px 10px;
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid #c3cfd9;
-  position: relative;
-  padding-right: 40px;
-  cursor: pointer;
-  h2 {
+  select {
+    background: url("../images/common/arr-select.png") right 5px center no-repeat;
+    padding-left: 10px;
     font-size: 16px;
-    font-weight: 500;
-    color: #333;
+    outline: none;
+    height: 35px;
+    border: 1px solid #c3cfd9;
+    appearance: none;
   }
-  span {
-    text-align: right;
-    color: #508bed;
+  input[type="text"] {
+    width: 100%;
+    height: 35px;
+    border: 1px solid #c3cfd9;
+    box-sizing: border-box;
+    padding-left: 10px;
+    font-size: 16px;
+    margin: 5px 0;
+    outline: none;
   }
-  &::after {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 10px;
-    content: "";
-    width: 20px;
-    height: 20px;
-    background: url("../images/common/icon_ingredientlist_off.png") right 5px center no-repeat;
+  input[type="number"] {
+    width: 200px;
+    height: 35px;
+    border: 1px solid #c3cfd9;
+    box-sizing: border-box;
+    padding-left: 10px;
+    font-size: 16px;
+    margin: 5px 0;
+    outline: none;
+  }
+  input[type="password"] {
+    width: 100%;
+    height: 35px;
+    border: 1px solid #c3cfd9;
+    box-sizing: border-box;
+    padding-left: 10px;
+    font-size: 16px;
+    margin: 5px 0;
+    outline: none;
+  }
+  .o_title_off {
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #c3cfd9;
+    position: relative;
+    padding-right: 40px;
+    cursor: pointer;
+    h2 {
+      font-size: 16px;
+      font-weight: 500;
+      color: #333;
+    }
+    span {
+      text-align: right;
+      color: #508bed;
+    }
+    &::after {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 10px;
+      content: "";
+      width: 20px;
+      height: 20px;
+      background: url("../images/common/icon_ingredientlist_off.png") right 5px center no-repeat;
+    }
   }
 }
-header {
-  position: fixed;
-  padding-top: 20px;
+#order_header {
+  border: 1px solid #959ea6;
+  margin: 0 auto;
   width: 900px;
   height: 120px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 20px;
   background-color: #fff;
   z-index: 50;
   .header_top {
@@ -156,15 +161,17 @@ header {
     box-sizing: border-box;
   }
 } //header_end
+
 #main_order {
   background: #e3e4e7;
-  margin-top: 150px;
+  margin-top: 142px;
   .deliver_location {
     margin-top: 20px;
     padding: 20px 10px;
     font-size: 16px;
   }
   .table_01 {
+    padding-top: 20px;
     background: #fff;
     table {
       border-top: 1px solid #c3cfd9;
@@ -644,8 +651,11 @@ header {
     }
   }
 }
-footer {
+#footer_order {
   width: 900px;
+  border: 1px solid #959ea6;
+  border-top: none;
+  margin: 0 auto;
   background-color: #e3e4e7;
   .order_footer {
     width: 100%;
