@@ -50,3 +50,31 @@ $(document).ready(function () {
     $(".w_ch").prop("checked", this.checked);
   });
 });
+
+/*상품상세 썸네일  s_pd_moisture hover 시 이미지 확대*/
+
+$(".list_img .ThumbImage").on("mouseenter", function () {
+  $(".thumbnail img").attr("src", $(this).attr("src").replace("big", "big"));
+});
+
+// 상품상세페이지 리뷰 클릭
+const productSlider = new Swiper(".top_pd_menu02 .r_imgBox ", {
+  speed: 600,
+  slidesPerView: 5, //화면에 보여지는 갯수
+  slidesPerGroup: 5, //묶음
+  navigation: {
+    prevEl: ".top_pd_menu02 .imgR_count .prev ",
+    nextEl: ".top_pd_menu02 .imgR_count .next ",
+  },
+});
+
+/*상품상세 아코디언*/
+$(".detail_accodion > div").on("click", function (e) {
+  e.preventDefault();
+  if (!$(this).hasClass("active")) {
+    $(".detail_accodion > div").removeClass("active");
+    $(this).addClass("active");
+  } else {
+    $(this).removeClass("active");
+  }
+});

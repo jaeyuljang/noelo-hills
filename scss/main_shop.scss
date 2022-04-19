@@ -251,7 +251,7 @@
       justify-content: space-between;
       .txtReview {
         .review_score_group {
-          padding: 20px 0 20px 20px;
+          padding: 40px 0 20px 20px;
           .review_count {
             strong {
               font-size: 24px;
@@ -299,10 +299,12 @@
         }
       }
       .imgReview {
-        width: 600px;
+        // padding: 0 20px;
+        width: 800px;
         padding-top: 10px;
         cursor: pointer;
         .imgR_title {
+          padding-left: 30px;
           font-size: 16px;
           font-weight: 500;
           span {
@@ -310,17 +312,38 @@
           }
         }
         .imgR_count {
+          box-sizing: border-box;
+          overflow: hidden;
           margin-top: 15px;
           display: flex;
-          .material-icons {
-            line-height: 100px;
+          justify-content: space-between;
+          align-items: center;
+          .prev,
+          .next {
+            img {
+              vertical-align: middle;
+            }
           }
           .r_imgBox {
-            box-sizing: border-box;
-            width: 100%;
-            height: 100px;
-            border: 1px solid #c3cfd9;
-            background-color: #ccc;
+            // box-sizing: border-box;
+            overflow: hidden;
+            // width: 100%;
+            height: 128px;
+            ul {
+              display: flex;
+              // justify-content: center;
+              // box-sizing: border-box;
+              // overflow: hidden;
+              li {
+                margin-right: 5px;
+                width: 128px;
+                height: 128px;
+                img {
+                  width: 128px;
+                  height: 128px;
+                }
+              }
+            }
           }
         }
       }
@@ -342,7 +365,7 @@
         margin: 20px auto;
         text-align: center;
       }
-      .detail_acodion {
+      .detail_accodion {
         margin-top: 50px;
         div {
           // box-sizing: border-box;
@@ -354,9 +377,6 @@
             a {
               display: block;
               background: url("../images/common/icon_ingredientlist_off.png") right 10px center no-repeat;
-              &.active {
-                background: url("../images/common/icon_ingredientlist_on.png") right 10px center no-repeat;
-              }
             }
           }
           cursor: pointer;
@@ -368,6 +388,17 @@
           }
         }
       }
+      .detail_accodion > div.active h4 a {
+        background-image: url("../images/common/icon_ingredientlist_on.png");
+      } // 상세페이지 리뷰 리스트 클릭시 화살표 이미지 변경
+      .detail_accodion > div.active h4 + div {
+        display: block;
+        background: #ffffff;
+      } // 상세페이지 리뷰 리스트 클릭시 세부내용 나타남
+      .detail_accodion > div h4 + div {
+        display: none;
+        background: #ffffff;
+      } // 상세페이지 다른 리뷰 리스트 클릭시 세부내용 사라짐
       //shop 리뷰 테이블 시작
       .review_shop_table {
         margin-top: 30px;
