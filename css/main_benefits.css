@@ -1,0 +1,127 @@
+.titleBox { line-height: 1.5; }
+
+.titleBox h2 { margin-bottom: 50px; font-size: 3.6rem; font-weight: 600; }
+
+.titleBox p { font-size: 18px; }
+
+.btns { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.btns.center { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+.btns.right { -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
+
+.btns .btn { border: 1px solid #d9d9d9; border-radius: 100px; -webkit-transition: 0.25s ease; transition: 0.25s ease; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.btns .transition:hover { background-color: #111111; border-color: #111111; color: #fff; }
+
+.btns .large { height: 60px; padding: 0 50px; }
+
+#main { padding-top: 70px; width: 100%; }
+
+#main #eventsVisual { width: 100%; }
+
+#main #eventsVisual .eventsBanner { margin: 0 auto; text-align: center; width: 100%; height: 260px; background-repeat: no-repeat; background-position: 50%; background-size: cover; background-image: url("../images/main/banner/subimage_benefits.png"); }
+
+#main #eventsVisual .middleMenu { background-color: #faf8f2; height: 120px; }
+
+#main #eventsVisual .middleMenu p { padding: 18px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; text-align: center; font-size: 18px; }
+
+#main #eventsVisual .middleMenu ul { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+#main #eventsVisual .middleMenu ul li { margin: 10px; }
+
+#main #eventsVisual .eventsContainer { position: relative; letter-spacing: -0.45px; }
+
+#main #eventsVisual .eventsContainer .eventsBox { padding-top: 20px; }
+
+#main #eventsVisual .eventsContainer .eventsBox ul { -webkit-box-pack: left; -ms-flex-pack: left; justify-content: left; width: 100%; margin: 20px 100px 50px; font-size: 0; line-height: 2; text-align: center; display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+#main #eventsVisual .eventsContainer .eventsBox ul li { width: 343px; padding: 0; margin: 0 20px 0 0; }
+
+#main #eventsVisual .eventsContainer .eventsBox ul li a { overflow: hidden; width: 345px; height: 345px; }
+
+#main #eventsVisual .eventsContainer .eventsBox ul li a img { width: 343px; height: 343px; }
+
+#main #eventsVisual .eventsContainer .eventsBox ul li .txt { font-size: 16px; color: #676e73; font-weight: 500; }
+
+#main #eventsVisual .eventsContainer .eventsBox ul li span { font-size: 14px; display: inline-block; }
+
+#main #eventsVisual .eventsContainer .eventsBox ul li span strong { margin: 30px; border-right: 1px solid #757575; }
+
+#main #eventsVisual .eventsContainer .eventsBox ul li span em { font-weight: normal; display: inline-block; }
+
+#main .pagination { text-align: center; margin-bottom: 250px; }
+
+#main .pagination a { color: #777777; letter-spacing: -0.45px; }
+
+#main .pagination ol { display: inline-block; font-size: 0; line-height: 0; vertical-align: top; }
+
+#main .pagination ol li { display: inline-block; margin: 0 0 0 1px; font-size: 12px; color: #757575; vertical-align: top; }
+
+#main .pagination ol li a { width: auto; height: 24px; padding: 0 10px; border: none; font-size: 16px; line-height: 24px; }
+
+#main .membersContainer { margin-top: 50px; width: 100%; text-align: center; margin-left: 90px; height: 1100px; }
+
+#main .membersContainer .welcome { height: 960px; border: 1px solid #c3cfd9; background: url(../images/main/benefits/members/bg-benefit-welcome01.png) center 50px no-repeat; background-color: #fff; float: left; width: 476px; text-align: center; letter-spacing: -1px; }
+
+#main .membersContainer .welcome h3 { position: relative; margin-bottom: 11px solid #777777; }
+
+#main .membersContainer .welcome h3 strong { display: block; font-size: 24px; font-weight: 600; color: #777777; letter-spacing: 0; }
+
+#main .membersContainer .welcome h3 span { display: block; font-size: 18px; color: #777777; font-weight: 500; }
+
+#main .membersContainer .welcome h4 { position: relative; display: inline-block; margin-top: 250px; font-size: 24px; font-weight: 500; color: #777777; }
+
+#main .membersContainer .welcome .pic1 { line-height: 1.8; padding-bottom: 175px; background: url(../images/main/benefits/members/bg-benefit-welcome02.png) center bottom no-repeat; font-size: 16px; line-height: 24px; color: #777777; }
+
+#main .membersContainer .welcome .pic2 { line-height: 1.8; padding-bottom: 175px; background: url(../images/main/benefits/members/bg-benefit-welcome03.png) center bottom no-repeat; font-size: 16px; line-height: 24px; color: #777777; }
+
+#main .membersContainer .purchase { background: #fffaeb url(../images/main/benefits/members/bg-benefit-purchase.png) center 50px no-repeat; float: left; width: 476px; height: 470px; padding: 200px 10px 0 10px px; margin-left: 20px; text-align: center; letter-spacing: -1px; }
+
+#main .membersContainer .purchase .giftBox { margin-bottom: 220px; }
+
+#main .membersContainer .purchase .giftBox strong { font-size: 24px; font-weight: 600; color: #777777; letter-spacing: 0; }
+
+#main .membersContainer .purchase .giftBox span { display: block; font-size: 18px; color: #777777; font-weight: 500; }
+
+#main .membersContainer .purchase h4 { position: relative; display: inline-block; margin-bottom: 40px; font-size: 24px; font-weight: 500; color: #777777; }
+
+#main .membersContainer .purchase p { margin-top: 10px; font-size: 16px; color: #777777; }
+
+#main .membersContainer .friend { background: #fffaeb url(../images/main/benefits/members/bg-benefit-friend.png) center 50px no-repeat; float: left; width: 476px; height: 470px; padding: 200px 10px 0 10px px; margin-left: 20px; margin-bottom: 20px; text-align: center; letter-spacing: -1px; background-color: #f2f7fa; }
+
+#main .membersContainer .friend h3 { margin-bottom: 220px; }
+
+#main .membersContainer .friend h3 strong { display: block; font-size: 24px; font-weight: 600; color: #777777; letter-spacing: 0; }
+
+#main .membersContainer .friend h3 span { display: block; font-size: 18px; color: #777777; font-weight: 500; }
+
+#main .membersContainer .friend h4 { position: relative; display: inline-block; margin-bottom: 40px; font-size: 24px; font-weight: 500; color: #777777; }
+
+#main .membersContainer .friend p { margin-top: 10px; font-size: 16px; color: #777777; }
+
+#main .membersContainer .birth { background: #fffaeb url(../images/main/benefits/members/bg-benefit-birthday.png) center 50px no-repeat; float: left; width: 476px; height: 470px; padding: 200px 10px 0 10px px; margin-left: 20px; margin-bottom: 20px; text-align: center; letter-spacing: -1px; background-color: #f2f1ed; }
+
+#main .membersContainer .birth h3 { margin-bottom: 220px; }
+
+#main .membersContainer .birth h3 strong { display: block; font-size: 24px; font-weight: 600; color: #777777; letter-spacing: 0; }
+
+#main .membersContainer .birth h3 span { display: block; font-size: 18px; color: #777777; font-weight: 500; }
+
+#main .membersContainer .birth h4 { margin-bottom: 180px; position: relative; display: inline-block; margin-bottom: 40px; font-size: 24px; font-weight: 500; color: #777777; }
+
+#main .membersContainer .birth p { margin-top: 10px; font-size: 16px; color: #777777; }
+
+#main .membersContainer .review { background: #fffaeb url(../images/main/benefits/members/bg-benefit-review.png) center 50px no-repeat; float: left; width: 476px; height: 470px; padding: 200px 10px 0 10px px; margin-left: 20px; margin-bottom: 20px; text-align: center; letter-spacing: -1px; background-color: #f2f7fa; }
+
+#main .membersContainer .review h3 { margin-bottom: 220px; }
+
+#main .membersContainer .review h3 strong { display: block; font-size: 24px; font-weight: 600; color: #777777; letter-spacing: 0; }
+
+#main .membersContainer .review h3 span { display: block; font-size: 18px; color: #777777; font-weight: 500; }
+
+#main .membersContainer .review .normalReview { position: relative; display: inline-block; margin-bottom: 40px; font-size: 24px; font-weight: 500; color: #777777; }
+
+#main .membersContainer .review .photoReview { position: relative; display: block; margin-bottom: 40px; font-size: 24px; font-weight: 500; color: #777777; }
+
+#main .membersContainer .review p { margin-top: 10px; font-size: 16px; color: #777777; }

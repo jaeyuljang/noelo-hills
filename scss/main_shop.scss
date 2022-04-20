@@ -1,6 +1,5 @@
 #main {
   padding-top: 70px;
-
   margin: 0 auto;
   .title_menu {
     text-align: center;
@@ -147,7 +146,6 @@
     padding: 70px 0;
     width: 1200px;
     margin: 0 auto;
-    border: 1px solid #c3cfd9;
     .top_pd_menu01 {
       display: flex;
       justify-content: space-between;
@@ -438,7 +436,7 @@
               }
             }
             .tr_review_expand {
-              display: none;
+              display: block;
             }
           }
         }
