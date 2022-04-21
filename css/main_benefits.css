@@ -18,7 +18,11 @@
 
 #main { padding-top: 70px; width: 100%; }
 
+<<<<<<< HEAD
 #main #eventsVisual { width: 1480px; margin: 0 auto; }
+=======
+#main #eventsVisual { width: 100%; }
+>>>>>>> e50856e0b27cab38806a56ee6d10cd50923c2e72
 
 #main #eventsVisual .eventsBanner { margin: 0 auto; text-align: center; width: 100%; height: 260px; background-repeat: no-repeat; background-position: 50%; background-size: cover; background-image: url("../images/main/banner/subimage_benefits.png"); }
 
@@ -30,6 +34,7 @@
 
 #main #eventsVisual .middleMenu ul li { margin: 10px; }
 
+<<<<<<< HEAD
 #main #eventsVisual .middleMenu ul li a { font-size: 14px; font-weight: 400; color: #777777; }
 
 #main #eventsVisual .middleMenu ul li.on a { font-size: 14px; font-weight: 400; color: #ffcc00; }
@@ -41,6 +46,15 @@
 #main #eventsVisual .eventsContainer .eventsBox ul { overflow: hidden; -webkit-box-sizing: border-box; box-sizing: border-box; width: 100%; line-height: 2; text-align: center; }
 
 #main #eventsVisual .eventsContainer .eventsBox ul li { display: inline-block; width: 343px; padding: 0; margin: 0 20px 0 0; }
+=======
+#main #eventsVisual .eventsContainer { position: relative; letter-spacing: -0.45px; }
+
+#main #eventsVisual .eventsContainer .eventsBox { padding-top: 20px; }
+
+#main #eventsVisual .eventsContainer .eventsBox ul { -webkit-box-pack: left; -ms-flex-pack: left; justify-content: left; width: 100%; margin: 20px 100px 50px; font-size: 0; line-height: 2; text-align: center; display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+#main #eventsVisual .eventsContainer .eventsBox ul li { width: 343px; padding: 0; margin: 0 20px 0 0; }
+>>>>>>> e50856e0b27cab38806a56ee6d10cd50923c2e72
 
 #main #eventsVisual .eventsContainer .eventsBox ul li a { overflow: hidden; width: 345px; height: 345px; }
 
@@ -54,6 +68,7 @@
 
 #main #eventsVisual .eventsContainer .eventsBox ul li span em { font-weight: normal; display: inline-block; }
 
+<<<<<<< HEAD
 #main #eventsVisual .event_detail { width: 1470px; margin: 40px auto; }
 
 #main #eventsVisual .event_detail table { width: 100%; border: 1px solid #c3cfd9; }
@@ -182,6 +197,8 @@
 
 #main #memberVisual .membersContainer .review p { margin-top: 10px; font-size: 16px; color: #777777; }
 
+=======
+>>>>>>> e50856e0b27cab38806a56ee6d10cd50923c2e72
 #main .pagination { text-align: center; margin-bottom: 250px; }
 
 #main .pagination a { color: #777777; letter-spacing: -0.45px; }
@@ -191,3 +208,72 @@
 #main .pagination ol li { display: inline-block; margin: 0 0 0 1px; font-size: 12px; color: #757575; vertical-align: top; }
 
 #main .pagination ol li a { width: auto; height: 24px; padding: 0 10px; border: none; font-size: 16px; line-height: 24px; }
+<<<<<<< HEAD
+=======
+
+#main .membersContainer { margin-top: 50px; width: 100%; text-align: center; margin-left: 90px; height: 1100px; }
+
+#main .membersContainer .welcome { height: 960px; border: 1px solid #c3cfd9; background: url(../images/main/benefits/members/bg-benefit-welcome01.png) center 50px no-repeat; background-color: #fff; float: left; width: 476px; text-align: center; letter-spacing: -1px; }
+
+#main .membersContainer .welcome h3 { position: relative; margin-bottom: 11px solid #777777; }
+
+#main .membersContainer .welcome h3 strong { display: block; font-size: 24px; font-weight: 600; color: #777777; letter-spacing: 0; }
+
+#main .membersContainer .welcome h3 span { display: block; font-size: 18px; color: #777777; font-weight: 500; }
+
+#main .membersContainer .welcome h4 { position: relative; display: inline-block; margin-top: 250px; font-size: 24px; font-weight: 500; color: #777777; }
+
+#main .membersContainer .welcome .pic1 { line-height: 1.8; padding-bottom: 175px; background: url(../images/main/benefits/members/bg-benefit-welcome02.png) center bottom no-repeat; font-size: 16px; line-height: 24px; color: #777777; }
+
+#main .membersContainer .welcome .pic2 { line-height: 1.8; padding-bottom: 175px; background: url(../images/main/benefits/members/bg-benefit-welcome03.png) center bottom no-repeat; font-size: 16px; line-height: 24px; color: #777777; }
+
+#main .membersContainer .purchase { background: #fffaeb url(../images/main/benefits/members/bg-benefit-purchase.png) center 50px no-repeat; float: left; width: 476px; height: 470px; padding: 200px 10px 0 10px px; margin-left: 20px; text-align: center; letter-spacing: -1px; }
+
+#main .membersContainer .purchase .giftBox { margin-bottom: 220px; }
+
+#main .membersContainer .purchase .giftBox strong { font-size: 24px; font-weight: 600; color: #777777; letter-spacing: 0; }
+
+#main .membersContainer .purchase .giftBox span { display: block; font-size: 18px; color: #777777; font-weight: 500; }
+
+#main .membersContainer .purchase h4 { position: relative; display: inline-block; margin-bottom: 40px; font-size: 24px; font-weight: 500; color: #777777; }
+
+#main .membersContainer .purchase p { margin-top: 10px; font-size: 16px; color: #777777; }
+
+#main .membersContainer .friend { background: #fffaeb url(../images/main/benefits/members/bg-benefit-friend.png) center 50px no-repeat; float: left; width: 476px; height: 470px; padding: 200px 10px 0 10px px; margin-left: 20px; margin-bottom: 20px; text-align: center; letter-spacing: -1px; background-color: #f2f7fa; }
+
+#main .membersContainer .friend h3 { margin-bottom: 220px; }
+
+#main .membersContainer .friend h3 strong { display: block; font-size: 24px; font-weight: 600; color: #777777; letter-spacing: 0; }
+
+#main .membersContainer .friend h3 span { display: block; font-size: 18px; color: #777777; font-weight: 500; }
+
+#main .membersContainer .friend h4 { position: relative; display: inline-block; margin-bottom: 40px; font-size: 24px; font-weight: 500; color: #777777; }
+
+#main .membersContainer .friend p { margin-top: 10px; font-size: 16px; color: #777777; }
+
+#main .membersContainer .birth { background: #fffaeb url(../images/main/benefits/members/bg-benefit-birthday.png) center 50px no-repeat; float: left; width: 476px; height: 470px; padding: 200px 10px 0 10px px; margin-left: 20px; margin-bottom: 20px; text-align: center; letter-spacing: -1px; background-color: #f2f1ed; }
+
+#main .membersContainer .birth h3 { margin-bottom: 220px; }
+
+#main .membersContainer .birth h3 strong { display: block; font-size: 24px; font-weight: 600; color: #777777; letter-spacing: 0; }
+
+#main .membersContainer .birth h3 span { display: block; font-size: 18px; color: #777777; font-weight: 500; }
+
+#main .membersContainer .birth h4 { margin-bottom: 180px; position: relative; display: inline-block; margin-bottom: 40px; font-size: 24px; font-weight: 500; color: #777777; }
+
+#main .membersContainer .birth p { margin-top: 10px; font-size: 16px; color: #777777; }
+
+#main .membersContainer .review { background: #fffaeb url(../images/main/benefits/members/bg-benefit-review.png) center 50px no-repeat; float: left; width: 476px; height: 470px; padding: 200px 10px 0 10px px; margin-left: 20px; margin-bottom: 20px; text-align: center; letter-spacing: -1px; background-color: #f2f7fa; }
+
+#main .membersContainer .review h3 { margin-bottom: 220px; }
+
+#main .membersContainer .review h3 strong { display: block; font-size: 24px; font-weight: 600; color: #777777; letter-spacing: 0; }
+
+#main .membersContainer .review h3 span { display: block; font-size: 18px; color: #777777; font-weight: 500; }
+
+#main .membersContainer .review .normalReview { position: relative; display: inline-block; margin-bottom: 40px; font-size: 24px; font-weight: 500; color: #777777; }
+
+#main .membersContainer .review .photoReview { position: relative; display: block; margin-bottom: 40px; font-size: 24px; font-weight: 500; color: #777777; }
+
+#main .membersContainer .review p { margin-top: 10px; font-size: 16px; color: #777777; }
+>>>>>>> e50856e0b27cab38806a56ee6d10cd50923c2e72
