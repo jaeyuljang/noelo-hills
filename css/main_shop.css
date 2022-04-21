@@ -52,7 +52,7 @@
 
 #main .inner .soon h3 span { display: block; height: 30px; line-height: 30px; font-size: 20px; }
 
-#main .shop_pd_info { padding: 70px 0; width: 1200px; margin: 0 auto; }
+#main .shop_pd_info { padding: 70px 0; width: 1200px; margin: 0 auto; border: 1px solid #c3cfd9; }
 
 #main .shop_pd_info .top_pd_menu01 { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
@@ -176,13 +176,9 @@
 
 #main .shop_pd_info .tab_content .review_shop_table table tbody tr td .title_date .shop_r_date_info { padding: 10px 0; line-height: 30px; }
 
-<<<<<<< HEAD
 #main .shop_pd_info .tab_content .review_shop_table table tbody tr td .title_date:nth-child(0) { text-align: center; vertical-align: middle; background-color: #fbfafa; }
 
 #main .shop_pd_info .tab_content .review_shop_table table tbody tr td:nth-child(1) { background-color: #fbfafa; width: 60px; vertical-align: middle; text-align: center; }
-=======
-#main .shop_pd_info .tab_content .review_shop_table table tbody .tr_review_expand { display: block; }
->>>>>>> e50856e0b27cab38806a56ee6d10cd50923c2e72
 
 #main .shop_pd_info .tab_content .table_bottom_btn { text-align: right; }
 
