@@ -32,7 +32,7 @@
 
 #admin_main .form .btns, #admin_main .tableBox .btns { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; margin-top: 50px; }
 
-#admin_main .form .btns .btn, #admin_main .tableBox .btns .btn { display: -webkit-box; display: -ms-flexbox; display: flex; width: 120px; height: 60px; border-radius: 5px; margin: 0 5px; color: #fff; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; font-size: 16px; }
+#admin_main .form .btns .btn, #admin_main .tableBox .btns .btn { display: -webkit-box; display: -ms-flexbox; display: flex; width: 120px; height: 60px; border-radius: 5px; margin: 0 5px 100px; color: #fff; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; font-size: 16px; }
 
 #admin_main .form .btns .btn.btnConfirm, #admin_main .tableBox .btns .btn.btnConfirm { background-color: #037dce; }
 
