@@ -26,7 +26,7 @@ img { vertical-align: top; }
 
 #admin_main .inner .subTitle { text-align: center; font-size: 38px; font-weight: 300; margin-bottom: 100px; }
 
-#admin_footer { background-color: #111; padding: 30px 0; color: #fff; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; font-size: 14px; }
+#admin_footer { width: 100%; background-color: #111; position: absolute; bottom: 0; padding: 30px 0; color: #fff; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; font-size: 14px; }
 
 .form-signin { width: 100%; max-width: 330px; padding: 15px; margin: auto; }
 
